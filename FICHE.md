@@ -21,3 +21,5 @@ Types de scènes :
 - `cta` : `main` (ex. ABONNE-TOI / ENREGISTRE / PARTAGE), `sub`, `next` (["Prochain épisode :", "titre"]) pour annoncer la suite.
 
 Durée cible : 25 à 35 s (hook + 2 à 3 points + conseil + cta). Pas de vidéo de présentation. Textes courts, un chiffre concret par point.
+
+- `table` : tableau récapitulatif qui se remplit ligne par ligne. `title`, `color`, `rows` (8 max) : `{"l": libellé, "sub": précision (optionnel), "v": valeur, "color": y/g/b/r, "hl": true pour la ligne mise en avant, "cue": numéro de la phrase qui fait apparaître la ligne, "at": moment dans cette phrase (0 à 1)}`.

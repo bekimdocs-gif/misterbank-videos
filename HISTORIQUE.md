@@ -2,6 +2,7 @@
 
 | Date de publication | Créneau | Sujet | Série | Fichier |
 |---|---|---|---|---|
+| 2026-11-13 | 10 h (hors créneaux automatiques) | Combien tu dois gagner pour emprunter 250 000 € (tableau, assurance comprise) | Combien tu dois gagner ? | videos/2026-11-11-combien-gagner-250000.mp4 |
 | 2026-11-12 | 18 h | Les 3 erreurs qui font refuser ton crédit (apport, relevés, épargne) | Les secrets de ton banquier ép. 2 | videos/2026-11-12-ep2-erreurs-refus-credit-v2.mp4 |
 | 2026-11-12 | 12 h | Livret A : vers une hausse au 1er février 2027 ? | L'actu de ton argent | videos/2026-11-12-livret-a-fevrier-2027.mp4 |
 | 2026-11-11 | 18 h | Comment négocier ton taux immobilier (4 leviers) | Les secrets de ton banquier ép. 1 | videos/2026-11-11-ep1-negocier-taux.mp4 |

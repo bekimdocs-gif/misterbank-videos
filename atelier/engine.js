@@ -47,6 +47,23 @@ function scenePoint(t,i,sc){
     const w=vert?620:n<=2?380:n==3?260:380;const hh=vert?84:96;ctx.save();ctx.translate(x,yy);ctx.scale(eb(p),eb(p));rr(-w/2,-hh/2,w,hh,hh/2);ctx.fillStyle='rgba(255,255,255,.08)';ctx.fill();ctx.lineWidth=4;ctx.strokeStyle=col;ctx.stroke();ctx.restore();txt(c,x,yy+3,40,COL.w,{sc:eb(p),maxW:w-30});});
   if(sc.note){const pn=P(t,frac(i,.8),.4);if(pn>0){ctx.save();ctx.translate(CX,1400);ctx.scale(eb(pn),eb(pn));rr(-420,-52,840,104,52);ctx.fillStyle=col;ctx.shadowColor=col;ctx.shadowBlur=30;ctx.fill();ctx.restore();txt(sc.note,CX,1403,46,'#0B1026',{sc:eb(pn),maxW:800});}}
 }
+function sceneTable(t,i,sc){
+  const col=CC[sc.color||'y'];const st=sStart(i);const rows=sc.rows||[];const rh=sc.rh||(rows.length>7?76:86);
+  const top=690,hh=150+rows.length*rh;const pin=P(t,st-.1,.45);if(pin<=0)return;
+  ctx.save();ctx.translate(lerp(W,0,eo(pin)),0);
+  ctx.save();rr(60,top,960,hh,44);ctx.fillStyle='rgba(255,255,255,0.07)';ctx.fill();ctx.lineWidth=6;ctx.strokeStyle=col;ctx.shadowColor=col;ctx.shadowBlur=30;ctx.stroke();ctx.restore();
+  ctx.save();rr(60,top,960,104,[44,44,0,0]);ctx.fillStyle=col;ctx.fill();ctx.restore();
+  txt(sc.title||'',CX,top+55,54,'#0B1026',{maxW:880});
+  rows.forEach((r,k)=>{const cu=SCUES[i][Math.min(r.cue||0,SCUES[i].length-1)];const t0=cu.start+cu.dur*(r.at||0);const p=P(t,t0,.35);const y=top+130+k*rh+rh/2;
+    if(k>0){ctx.fillStyle='rgba(255,255,255,0.12)';ctx.fillRect(100,y-rh/2,880,2);}
+    if(p<=0)return;const rc=CC[r.color]||COL.w;ctx.save();ctx.globalAlpha=cl(p*2);ctx.translate(lerp(60,0,eo(p)),0);
+    if(r.hl){ctx.save();rr(80,y-rh/2+6,920,rh-12,20);ctx.fillStyle=rc;ctx.shadowColor=rc;ctx.shadowBlur=25;ctx.fill();ctx.restore();}
+    const lc=r.hl?'#0B1026':COL.w,vc=r.hl?'#0B1026':rc==COL.w?COL.y:rc;
+    if(r.sub){txt(r.l,110,y-16,40,lc,{align:'left',w:800,maxW:500});txt(r.sub,110,y+24,27,r.hl?'#0B1026':COL.mut,{align:'left',w:600,maxW:500});}
+    else txt(r.l,110,y+2,42,lc,{align:'left',w:800,maxW:500});
+    txt(r.v,970,y+2,r.hl?56:50,vc,{align:'right',maxW:360,sc:.6+.4*eb(p)});ctx.restore();});
+  ctx.restore();
+}
 function sceneConseil(t,i,sc){
   pill(sc.label||'CONSEIL DE BANQUIER',sStart(i),t,COL.y,800);
   (sc.lines||[]).forEach((l,k)=>{const p=P(t,frac(i,.1+k*.3),.5);if(p<=0)return;const y=900+k*200;ctx.save();ctx.translate(lerp(-400,0,eo(p)),0);ctx.globalAlpha=cl(p*2);
@@ -63,7 +80,7 @@ function sceneCta(t,i,sc){
   txt(SPEC.footer||'Contenu pédagogique, pas un conseil personnalisé',CX,1460,26,'rgba(255,255,255,0.55)',{w:500,alpha:P(t,frac(i,.3),.4),maxW:980});
   if(SPEC.sources)txt(SPEC.sources,CX,1495,24,'rgba(255,255,255,0.45)',{w:500,alpha:P(t,frac(i,.3),.4),maxW:980});
 }
-SCN.forEach((s,i)=>{const sc=SPEC.scenes[i];S[s]=(t)=>({hook:sceneHook,point:scenePoint,conseil:sceneConseil,cta:sceneCta}[sc.type])(t,i,sc);});
+SCN.forEach((s,i)=>{const sc=SPEC.scenes[i];S[s]=(t)=>({hook:sceneHook,point:scenePoint,table:sceneTable,conseil:sceneConseil,cta:sceneCta}[sc.type])(t,i,sc);});
 // ---------- captions ----------
 const CAP={};TL.cues.forEach(c=>{if(c.cap)CAP[c.id]=c.cap;});
 const CHUNKS=[];

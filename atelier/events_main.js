@@ -4,6 +4,7 @@
   SCN.forEach((s,i)=>{const sc=SPEC.scenes[i];if(i>0)ev(SS[s]-0.05,'whoosh');
     if(sc.type=='hook'){ev(frac(i,.02),'pop');ev(frac(i,.15),'impact',.6);if(sc.badge)ev(frac(i,.45),'impact',.8);}
     if(sc.type=='point'){ev(sStart(i),'pop');if(sc.big)ev(frac(i,.18),'impact',.5);(sc.chips||[]).forEach((c,k)=>ev(frac(i,.35+k*.13),'pop'));if(sc.note)ev(frac(i,.8),'ding');}
+    if(sc.type=='table'){ev(sStart(i),'pop');(sc.rows||[]).forEach(r=>{const cu=SCUES[i][Math.min(r.cue||0,SCUES[i].length-1)];ev(cu.start+cu.dur*(r.at||0),r.hl?'impact':'pop',.5);});}
     if(sc.type=='conseil'){ev(sStart(i),'pop');(sc.lines||[]).forEach((l,k)=>ev(frac(i,.1+k*.3)+.1,'ding'));}
     if(sc.type=='cta'){ev(sStart(i),'pop');if(sc.next){ev(frac(i,.45),'impact',.5);ev(frac(i,.45)+.05,'bell');}}
   });
