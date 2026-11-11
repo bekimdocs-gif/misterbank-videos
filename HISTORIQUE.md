@@ -1,0 +1,11 @@
+# Historique des vidéos (plus récent en haut)
+
+| Date de publication | Créneau | Sujet | Série | Fichier |
+|---|---|---|---|---|
+| 2026-11-12 | 12 h | Livret A : vers une hausse au 1er février 2027 ? | L'actu de ton argent | videos/2026-11-12-livret-a-fevrier-2027.mp4 |
+| 2026-11-11 | 18 h | Comment négocier ton taux immobilier (4 leviers) | Les secrets de ton banquier ép. 1 | videos/2026-11-11-ep1-negocier-taux.mp4 |
+| 2026-11-11 | ~12 h | Présentation Mister Bank (avatar) | — | publiée à la main |
+| 2026-11-11 | ~11 h | Découvert bancaire : ce qui change le 20 novembre | actu | publiée à la main |
+| 2026-11-11 | ~11 h | Combien tu peux emprunter avec ton salaire | — | publiée à la main |
+| 2026-11-11 | ~11 h | Présentation v1 | — | publiée à la main |
+| 2026-11-11 | ~11 h | Les taux montent : les conséquences | — | publiée à la main |

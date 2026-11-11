@@ -1,0 +1,22 @@
+{
+ "id": "2026-11-12-livret-a-fevrier-2027",
+ "series": "L'ACTU DE TON ARGENT",
+ "footer": "Contenu pédagogique, pas un conseil personnalisé",
+ "sources": "Sources : Meilleurtaux, BPCE L'Observatoire (projections nov. 2026). Taux non encore décidé.",
+ "scenes": [
+  {"type":"hook","line1":"TON LIVRET A","line2":"VA-T-IL MONTER ?","badge":"1ER FÉVRIER 2027","sub":"ce qui se prépare",
+   "cues":[{"text":"Ton Livret A pourrait rapporter plus dès le premier février !"},{"text":"Voilà ce qui se prépare.","cap":"Voilà ce qui se prépare."}]},
+  {"type":"point","n":"1","color":"y","title":"Aujourd'hui","big":"1,70 %","sub":"Livret A et LDDS depuis le 1er août 2026","chips":["LEP : 2,50 %"],
+   "cues":[{"text":"Aujourd'hui, le Livret A rapporte 1,70 %, et le LEP 2,50 %.","say":"Aujourd'hui, le Livret A rapporte un virgule soixante-dix pour cent, et le LEP deux virgule cinquante pour cent."}]},
+  {"type":"point","n":"2","color":"g","title":"La formule","big":"Inflation + €STR","sub":"moyennes de juillet à décembre 2026","note":"Calcul mi-janvier",
+   "cues":[{"text":"Son taux suit une formule : l'inflation et un taux interbancaire, l'€STR, sur le second semestre. Le calcul tombe mi-janvier.","say":"Son taux suit une formule : l'inflation et un taux interbancaire, l'ester, sur le second semestre. Le calcul tombe mi-janvier."}]},
+  {"type":"point","n":"3","color":"b","title":"Les projections","big":"2,4 à 2,6 %","sub":"selon Meilleurtaux et BPCE","chips":["Pas encore décidé"],
+   "cues":[{"text":"Les projections tournent autour de 2,4 à 2,6 %. Mais rien n'est décidé : le gouvernement peut déroger.","say":"Les projections tournent autour de deux virgule quatre à deux virgule six pour cent. Mais rien n'est décidé : le gouvernement peut déroger."}]},
+  {"type":"point","n":"4","color":"y","title":"Sur un livret plein","big":"+184 €/an","sub":"22 950 € : 390 € → 574 € d'intérêts à 2,5 %",
+   "cues":[{"text":"Sur un Livret A plein, passer à 2,5 %, c'est environ 184 € d'intérêts en plus par an.","say":"Sur un Livret A plein, passer à deux virgule cinq pour cent, c'est environ cent quatre-vingt-quatre euros d'intérêts en plus par an."}]},
+  {"type":"conseil","lines":["Garde ton épargne de précaution sur ton livret","Vérifie si tu as droit au LEP : il rapporte plus"],
+   "cues":[{"text":"Mon conseil de banquier : garde ton épargne de précaution sur ton livret, et vérifie si tu as droit au LEP, il rapporte plus."}]},
+  {"type":"cta","main":"ABONNE-TOI","sub":"pour avoir le vrai taux dès l'annonce","next":["Rendez-vous mi-janvier","pour le taux officiel"],
+   "cues":[{"text":"Abonne-toi : je te donne le vrai taux dès qu'il est annoncé, mi-janvier !"}]}
+ ]
+}
