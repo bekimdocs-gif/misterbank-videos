@@ -6,6 +6,14 @@
 - Prendre l'assurance emprunteur proposée par la banque (souvent de meilleures garanties) — à nuancer : la loi Lemoine permet de choisir/changer d'assurance, comparer les garanties.
 - L'engagement et le fonctionnement avec la banque (carte bancaire, épargne, assurances) : la banque aime les clients qui lui font confiance.
 
-## À recueillir auprès de Mister Bank
-- Les 3 choses qu'il regarde en premier sur les relevés de compte.
-- Les 3 erreurs qui font le plus souvent refuser un crédit.
+## Les 3 erreurs qui font refuser un crédit (11/11/2026) — pour l'ÉP. 2 annoncé
+1. Un apport insuffisant.
+2. Des relevés de compte pas sains.
+3. Pas d'épargne de côté.
+
+## Ce que le banquier regarde sur les relevés de compte (11/11/2026)
+- Que le salaire est bien versé (régulièrement, sur le compte).
+- Le montant de l'épargne.
+- S'il y a déjà des crédits en cours.
+- L'utilisation du découvert autorisé.
+- Certaines dépenses à risque : jeux en ligne, jeux de hasard / paris — très mal vus par les banques (formuler à l'écran : « un vrai signal d'alerte pour ton banquier », pas « interdit »).
