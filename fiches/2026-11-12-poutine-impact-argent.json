@@ -1,0 +1,94 @@
+{
+ "id": "2026-11-12-poutine-impact-argent",
+ "series": "L'ACTU DE TON ARGENT",
+ "footer": "Contenu pédagogique, pas un conseil personnalisé",
+ "sources": "Sources : déclarations du 29 oct. 2026 (presse), Euronews (4 nov. 2026), FGDR.",
+ "scenes": [
+  {
+   "type": "hook",
+   "line1": "POUTINE MENACE L'EUROPE",
+   "line2": "ET TON ARGENT ?",
+   "badge": "3 IMPACTS",
+   "cues": [
+    {
+     "text": "Poutine menace l'Europe. Voilà ce que ça change pour ton argent."
+    }
+   ]
+  },
+  {
+   "type": "point",
+   "n": "",
+   "color": "r",
+   "title": "Ce qu'il a dit",
+   "big": "Mer Baltique",
+   "sub": "menace sur les routes maritimes",
+   "note": "Pour l'instant : des mots, pas des actes",
+   "cues": [
+    {
+     "text": "Il se dit prêt à un conflit et menace la mer Baltique. Pour l'instant, ce sont des mots."
+    }
+   ]
+  },
+  {
+   "type": "point",
+   "n": "1",
+   "color": "y",
+   "title": "Ta facture d'énergie",
+   "big": "Gaz au plus haut",
+   "sub": "près de 97 €/MWh, record depuis 2022",
+   "chips": [
+    "Chauffage",
+    "Carburant",
+    "Courses"
+   ],
+   "cues": [
+    {
+     "text": "Un : l'énergie. Le gaz est déjà au plus haut depuis 2022. Une crise de plus, et ta facture grimpe.",
+     "say": "Un : l'énergie. Le gaz est déjà au plus haut depuis deux mille vingt-deux. Une crise de plus, et ta facture grimpe."
+    }
+   ]
+  },
+  {
+   "type": "point",
+   "n": "2",
+   "color": "b",
+   "title": "Ton crédit",
+   "big": "Taux sous tension",
+   "sub": "plus d'inflation = des taux qui restent hauts",
+   "cues": [
+    {
+     "text": "Deux : ton crédit. Plus d'inflation, ce sont des taux qui restent élevés."
+    }
+   ]
+  },
+  {
+   "type": "point",
+   "n": "3",
+   "color": "g",
+   "title": "Ton épargne",
+   "big": "100 000 €",
+   "sub": "garantis par personne et par banque",
+   "note": "Tes dépôts sont protégés",
+   "cues": [
+    {
+     "text": "Trois : ton épargne. Tes dépôts sont garantis jusqu'à 100 000 € par banque.",
+     "say": "Trois : ton épargne. Tes dépôts sont garantis jusqu'à cent mille euros par banque."
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "main": "PARTAGE",
+   "sub": "à quelqu'un que ça concerne",
+   "next": [
+    "Abonne-toi :",
+    "l'actu de ton argent chaque jour"
+   ],
+   "cues": [
+    {
+     "text": "Partage à quelqu'un que ça concerne, et abonne-toi !"
+    }
+   ]
+  }
+ ]
+}
