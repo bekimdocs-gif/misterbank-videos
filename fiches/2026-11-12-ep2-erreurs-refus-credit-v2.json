@@ -1,0 +1,20 @@
+{
+ "id": "2026-11-12-ep2-erreurs-refus-credit-v2",
+ "series": "LES SECRETS DE TON BANQUIER · ÉP. 2",
+ "footer": "Contenu pédagogique, pas un conseil personnalisé",
+ "sources": "Selon l'expérience de Mister Bank, directeur de banque.",
+ "scenes": [
+  {"type":"hook","line1":"TON CRÉDIT","line2":"REFUSÉ ?","badge":"3 ERREURS","sub":"que je vois tous les jours en agence",
+   "cues":[{"text":"Ton crédit a été refusé ? C'est souvent à cause de trois erreurs."},{"text":"Je les vois tous les jours en agence."}]},
+  {"type":"point","n":"1","color":"r","title":"Un apport insuffisant","big":"10 à 20 %","sub":"l'apport recommandé","chips":["Notaire","Garantie","Dossier"],
+   "cues":[{"text":"Erreur numéro un : un apport insuffisant. Idéalement, prévois 10 à 20 % pour couvrir les frais de notaire, de garantie et de dossier.","say":"Erreur numéro un : un apport insuffisant. Idéalement, prévois dix à vingt pour cent pour couvrir les frais de notaire, de garantie et de dossier."}]},
+  {"type":"point","n":"2","color":"y","title":"Des relevés pas sains","big":"À la loupe","sub":"tes derniers relevés de compte","chips":["Découvert permanent","Crédits en cours","Jeux d'argent"],
+   "cues":[{"text":"Erreur numéro deux : des relevés de compte pas sains. Découvert utilisé en permanence, crédits en cours, jeux d'argent… c'est un vrai signal d'alerte pour ton banquier."}]},
+  {"type":"point","n":"3","color":"g","title":"Pas d'épargne de côté","big":"0 € = alerte","sub":"l'épargne montre que tu sais gérer","note":"Même un peu, ça compte",
+   "cues":[{"text":"Erreur numéro trois : pas d'épargne de côté. Même une petite épargne montre que tu sais gérer ton budget.","say":"Erreur numéro trois : pas d'épargne de côté. Même une petite épargne montre que tu sais gérer ton budget."}]},
+  {"type":"conseil","lines":["Prépare tes comptes plusieurs mois avant","Mets de côté chaque mois, même peu"],
+   "cues":[{"text":"Mon conseil de banquier : prépare tes comptes plusieurs mois avant ta demande, et mets de côté chaque mois, même un petit montant."}]},
+  {"type":"cta","main":"ENREGISTRE","sub":"avant de monter ton dossier","next":["Prochain épisode :","ce que je regarde sur tes relevés"],
+   "cues":[{"text":"Enregistre cette vidéo, et abonne-toi : dans le prochain épisode, je te montre ce que je regarde sur tes relevés !"}]}
+ ]
+}
