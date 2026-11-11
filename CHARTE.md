@@ -7,9 +7,9 @@
 - Voix : fr-FR-RemyMultilingualNeural, dynamique (+12 %).
 - Hashtag de marque : #misterbank.
 
-## Structure (25 à 40 s)
-1. Accroche choc dans les 3 premières secondes (question qui touche, chiffre, alerte), avatar en grand. Mot-clé de recherche dans les 5 premières secondes.
-2. 2 à 4 points numérotés, un chiffre concret par point.
+## Structure (25 à 35 s)
+1. Accroche choc dite par l'avatar dès la 1re seconde (question qui touche, chiffre, alerte), chiffre fort à l'écran dans les 2 premières secondes. Mot-clé de recherche dans les 5 premières secondes.
+2. 2 à 3 points numérotés, un chiffre concret par point, un seul message par vidéo.
 3. Conseil de banquier (avis personnel, prudent).
 4. Fin : abonnement + suite annoncée (prochain épisode) ou « partage à quelqu'un que ça concerne ».
 5. Mentions : sources datées, « contenu pédagogique, pas un conseil personnalisé ».

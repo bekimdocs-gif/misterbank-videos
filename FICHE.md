@@ -20,4 +20,4 @@ Types de scènes :
 - `conseil` : `lines` (1 ou 2 phrases ≤ 60 caractères) — le conseil personnel de Mister Bank.
 - `cta` : `main` (ex. ABONNE-TOI / ENREGISTRE / PARTAGE), `sub`, `next` (["Prochain épisode :", "titre"]) pour annoncer la suite.
 
-Durée cible : 25 à 40 s (hook + 2 à 4 points + conseil + cta). Textes courts, un chiffre concret par point.
+Durée cible : 25 à 35 s (hook + 2 à 3 points + conseil + cta). Pas de vidéo de présentation. Textes courts, un chiffre concret par point.
