@@ -1,0 +1,76 @@
+{
+ "id": "2026-11-12-livret-a-court",
+ "series": "L'ACTU DE TON ARGENT",
+ "footer": "Contenu pédagogique, pas un conseil personnalisé",
+ "sources": "Sources : Meilleurtaux, BPCE L'Observatoire (projections nov. 2026). Taux non encore décidé.",
+ "scenes": [
+  {
+   "type": "hook",
+   "line1": "TON LIVRET A",
+   "line2": "VA-T-IL MONTER ?",
+   "badge": "1ER FÉVRIER 2027",
+   "cues": [
+    {
+     "text": "Ton Livret A pourrait rapporter plus dès le premier février !"
+    }
+   ]
+  },
+  {
+   "type": "point",
+   "n": "1",
+   "color": "y",
+   "title": "Aujourd'hui",
+   "big": "1,70 %",
+   "sub": "Livret A et LDDS depuis le 1er août 2026",
+   "cues": [
+    {
+     "text": "Aujourd'hui, il rapporte 1,70 %.",
+     "say": "Aujourd'hui, il rapporte un virgule soixante-dix pour cent."
+    }
+   ]
+  },
+  {
+   "type": "point",
+   "n": "2",
+   "color": "b",
+   "title": "Les projections",
+   "big": "2,4 à 2,6 %",
+   "sub": "selon Meilleurtaux et BPCE",
+   "note": "Pas encore décidé · calcul mi-janvier",
+   "cues": [
+    {
+     "text": "Les projections : entre 2,4 et 2,6 %. Mais rien n'est décidé, le calcul tombe mi-janvier.",
+     "say": "Les projections : entre deux virgule quatre et deux virgule six pour cent. Mais rien n'est décidé, le calcul tombe mi-janvier."
+    }
+   ]
+  },
+  {
+   "type": "point",
+   "n": "3",
+   "color": "g",
+   "title": "Sur un livret plein",
+   "big": "+184 €/an",
+   "sub": "22 950 € : 390 € → 574 € d'intérêts à 2,5 %",
+   "cues": [
+    {
+     "text": "Sur un livret plein, à 2,5 %, c'est environ 184 € de plus par an.",
+     "say": "Sur un livret plein, à deux virgule cinq pour cent, c'est environ cent quatre-vingt-quatre euros de plus par an."
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "main": "PARTAGE",
+   "sub": "à quelqu'un que ça concerne",
+   "next": [
+    "Abonne-toi :",
+    "le vrai taux dès l'annonce"
+   ],
+   "cues": [
+    {
+     "text": "Partage à quelqu'un que ça concerne, et abonne-toi : je te donne le vrai taux dès l'annonce !"
+    }
+   ]
+  }
+ ]
+}

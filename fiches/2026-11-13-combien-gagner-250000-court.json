@@ -1,5 +1,5 @@
 {
- "id": "2026-11-11-combien-gagner-250000",
+ "id": "2026-11-13-combien-gagner-250000-court",
  "series": "COMBIEN TU DOIS GAGNER ?",
  "footer": "Contenu pédagogique, pas un conseil personnalisé",
  "sources": "Simulation indicative : 250 000 € sur 300 mois à 3,81 % (taux moyen nov. 2026), assurance 0,30 %/an du capital. Endettement max 35 % (HCSF).",
@@ -14,10 +14,6 @@
     {
      "text": "Combien tu dois gagner pour emprunter 250 000 € aujourd'hui ?",
      "say": "Combien tu dois gagner pour emprunter deux cent cinquante mille euros aujourd'hui ?"
-    },
-    {
-     "text": "Je te fais le calcul.",
-     "cap": "Je te fais le calcul."
     }
    ]
   },
@@ -25,55 +21,43 @@
    "type": "table",
    "color": "y",
    "title": "TON PRÊT EN 1 TABLEAU",
+   "rh": 100,
    "rows": [
     {
      "l": "Montant emprunté",
      "v": "250 000 €",
      "cue": 0,
-     "at": 0.05
-    },
-    {
-     "l": "Apport : 10 à 20 %",
-     "sub": "paie les frais de notaire et de dossier",
-     "v": "25 000 à 50 000 €",
-     "cue": 0,
-     "at": 0.3
+     "at": 0.0
     },
     {
      "l": "Durée",
-     "sub": "résidence principale",
      "v": "25 ans · 300 mois",
-     "cue": 1,
-     "at": 0.15
+     "cue": 0,
+     "at": 0.3
     },
     {
      "l": "Taux moyen",
      "sub": "novembre 2026",
      "v": "3,81 %",
      "color": "b",
-     "cue": 1,
+     "cue": 0,
      "at": 0.6
     },
     {
-     "l": "Mensualité du crédit",
-     "v": "1 294 €",
-     "cue": 2,
-     "at": 0.05
+     "l": "Apport : 10 à 20 %",
+     "sub": "frais de notaire et de dossier",
+     "v": "25 000 à 50 000 €",
+     "cue": 1,
+     "at": 0.1
     },
     {
-     "l": "Assurance",
-     "sub": "hypothèse 0,30 % par an",
-     "v": "+ 62,50 €",
-     "cue": 2,
-     "at": 0.35
-    },
-    {
-     "l": "MENSUALITÉ TOTALE",
+     "l": "MENSUALITÉ",
+     "sub": "1 294 € + 62,50 € d'assurance",
      "v": "1 356 €",
      "color": "y",
      "hl": true,
      "cue": 2,
-     "at": 0.65
+     "at": 0.3
     },
     {
      "l": "Endettement maximum",
@@ -81,25 +65,25 @@
      "v": "35 %",
      "color": "r",
      "cue": 3,
-     "at": 0.3
+     "at": 0.2
     }
    ],
    "cues": [
     {
-     "text": "Tu empruntes 250 000 €. L'apport, entre 10 et 20 %, est obligatoire : il paie les frais de notaire et de dossier.",
-     "say": "Tu empruntes deux cent cinquante mille euros. L'apport, entre dix et vingt pour cent, est obligatoire : il paie les frais de notaire et de dossier."
+     "text": "250 000 €, sur 25 ans, à 3,81 %.",
+     "say": "Deux cent cinquante mille euros, sur vingt-cinq ans, à trois virgule quatre-vingt-un pour cent."
     },
     {
-     "text": "Résidence principale, sur 25 ans, au taux moyen de novembre : 3,81 %.",
-     "say": "Résidence principale, sur vingt-cinq ans, au taux moyen de novembre : trois virgule quatre-vingt-un pour cent."
+     "text": "Prévois 10 à 20 % d'apport pour les frais de notaire et de dossier.",
+     "say": "Prévois dix à vingt pour cent d'apport pour les frais de notaire et de dossier."
     },
     {
-     "text": "Ta mensualité : 1 294 €, plus 62,50 € d'assurance. Total : 1 356 € par mois.",
-     "say": "Ta mensualité : mille deux cent quatre-vingt-quatorze euros, plus soixante-deux euros cinquante d'assurance. Total : mille trois cent cinquante-six euros par mois."
+     "text": "Ta mensualité, assurance comprise : 1 356 €.",
+     "say": "Ta mensualité, assurance comprise : mille trois cent cinquante-six euros."
     },
     {
-     "text": "Et elle ne doit pas dépasser 35 % de tes revenus.",
-     "say": "Et elle ne doit pas dépasser trente-cinq pour cent de tes revenus."
+     "text": "Maximum : 35 % de tes revenus.",
+     "say": "Maximum : trente-cinq pour cent de tes revenus."
     }
    ]
   },
@@ -115,18 +99,6 @@
     {
      "text": "Résultat : seul, il te faut 3 874 € net par mois. À deux, 1 937 € chacun.",
      "say": "Résultat : seul, il te faut trois mille huit cent soixante-quatorze euros net par mois. À deux, mille neuf cent trente-sept euros chacun."
-    }
-   ]
-  },
-  {
-   "type": "conseil",
-   "lines": [
-    "Plus ton apport est élevé, plus ton dossier rassure",
-    "Garde une épargne de côté après l'achat"
-   ],
-   "cues": [
-    {
-     "text": "Mon conseil de banquier : plus ton apport est élevé, plus ton dossier rassure. Et garde une épargne de côté."
     }
    ]
   },

@@ -1,0 +1,79 @@
+{
+ "id": "2026-11-12-ep2-erreurs-refus-credit-v3",
+ "series": "LES SECRETS DE TON BANQUIER · ÉP. 2",
+ "footer": "Contenu pédagogique, pas un conseil personnalisé",
+ "sources": "Selon l'expérience de Mister Bank, directeur de banque.",
+ "scenes": [
+  {
+   "type": "hook",
+   "line1": "TON CRÉDIT",
+   "line2": "REFUSÉ ?",
+   "badge": "3 ERREURS",
+   "sub": "que je vois tous les jours en agence",
+   "cues": [
+    {
+     "text": "Ton crédit refusé ? Trois erreurs que je vois tous les jours en agence."
+    }
+   ]
+  },
+  {
+   "type": "point",
+   "n": "1",
+   "color": "r",
+   "title": "Pas assez d'apport",
+   "big": "Trop de risque",
+   "sub": "pour la banque",
+   "note": "Sans apport, dossier fragile",
+   "cues": [
+    {
+     "text": "Un : pas assez d'apport. Sans apport, la banque prend tout le risque."
+    }
+   ]
+  },
+  {
+   "type": "point",
+   "n": "2",
+   "color": "y",
+   "title": "Des relevés pas sains",
+   "big": "À la loupe",
+   "sub": "tes derniers relevés de compte",
+   "chips": [
+    "Découvert permanent",
+    "Jeux d'argent"
+   ],
+   "cues": [
+    {
+     "text": "Deux : des relevés pas sains. Découvert permanent, jeux d'argent… un vrai signal d'alerte pour ton banquier."
+    }
+   ]
+  },
+  {
+   "type": "point",
+   "n": "3",
+   "color": "g",
+   "title": "Pas d'épargne de côté",
+   "big": "0 € = alerte",
+   "sub": "l'épargne montre que tu sais gérer",
+   "note": "Même un peu, ça compte",
+   "cues": [
+    {
+     "text": "Trois : zéro épargne. Même un petit montant chaque mois montre que tu sais gérer."
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "main": "ENREGISTRE",
+   "sub": "avant de monter ton dossier",
+   "next": [
+    "Prochain épisode :",
+    "ce que je regarde sur tes relevés"
+   ],
+   "cues": [
+    {
+     "text": "Enregistre cette vidéo, et abonne-toi : prochain épisode, ce que je regarde sur tes relevés !"
+    }
+   ]
+  }
+ ]
+}
