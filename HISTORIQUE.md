@@ -2,6 +2,7 @@
 
 | Date de publication | Créneau | Sujet | Série | Fichier |
 |---|---|---|---|---|
+| 2026-11-12 | 18 h | Les 3 erreurs qui font refuser ton crédit | Les secrets de ton banquier ép. 2 | videos/2026-11-12-ep2-erreurs-refus-credit.mp4 |
 | 2026-11-12 | 12 h | Livret A : vers une hausse au 1er février 2027 ? | L'actu de ton argent | videos/2026-11-12-livret-a-fevrier-2027.mp4 |
 | 2026-11-11 | 18 h | Comment négocier ton taux immobilier (4 leviers) | Les secrets de ton banquier ép. 1 | videos/2026-11-11-ep1-negocier-taux.mp4 |
 | 2026-11-11 | ~12 h | Présentation Mister Bank (avatar) | — | publiée à la main |

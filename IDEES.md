@@ -2,9 +2,9 @@
 
 ## Les secrets de ton banquier (pédagogique, 18 h)
 - [x] Ép. 1 : comment négocier ton taux immobilier (4 leviers)
-- [ ] Ép. 2 : les 3 erreurs qui font refuser ton crédit (ANNONCÉ à la fin de l'ép. 1 — attendre l'expertise de Mister Bank si possible, sinon contenu général prudent)
+- [x] Ép. 2 : les 3 erreurs qui font refuser ton crédit (contenu général : endettement 35 %, comptes mal tenus, FICP)
 - [ ] Ce que ton banquier regarde sur tes relevés (attendre l'expertise)
-- [ ] Crédit sur 20 ou 25 ans : la vraie différence de coût
+- [ ] Crédit sur 20 ou 25 ans : la vraie différence de coût (ANNONCÉ à la fin de l'ép. 2 → ép. 3)
 - [ ] Assurance emprunteur : comment ça marche, loi Lemoine
 - [ ] Apport personnel : combien faut-il vraiment ?
 - [ ] Le prêt à taux zéro (PTZ) : qui y a droit en 2026-2027
