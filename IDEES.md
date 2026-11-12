@@ -12,7 +12,7 @@
 - [ ] Épargne de précaution : combien garder et où
 - [ ] LEP : es-tu éligible ?
 - [ ] Le vrai coût d'un découvert (agios)
-- [ ] Frais bancaires : ceux qu'on peut éviter
+- [ ] Frais bancaires : ceux qu'on peut éviter (les commissions d'intervention sont déjà traitées, vidéo du 13/11)
 - [ ] Taux d'usure : c'est quoi ?
 - [ ] Rachat / renégociation de crédit : quand est-ce intéressant ?
 - [ ] Crédit renouvelable : pourquoi s'en méfier
