@@ -2,6 +2,8 @@
 
 | Date de publication | Créneau | Sujet | Série | Fichier |
 |---|---|---|---|---|
+| 2026-11-11 | ~20 h | Poutine menace l'Europe : 3 impacts pour ton argent | L'actu de ton argent | videos/2026-11-12-poutine-impact-argent.mp4 (publiée à la main) |
+| 2026-11-11 | ~14 h 30 | Ta banque peut faire faillite ? (Paraguay, garantie 100 000 €) | actu | publiée à la main |
 | 2026-11-13 | 10 h (hors créneaux automatiques) | Combien tu dois gagner pour emprunter 250 000 € (tableau, assurance comprise) | Combien tu dois gagner ? | videos/2026-11-13-combien-gagner-250000-court.mp4 (version courte 28 s) |
 | 2026-11-12 | 18 h | Les 3 erreurs qui font refuser ton crédit (apport, relevés, épargne) | Les secrets de ton banquier ép. 2 | videos/2026-11-12-ep2-erreurs-refus-credit-v3.mp4 (version courte 24 s) |
 | 2026-11-12 | 12 h | Livret A : vers une hausse au 1er février 2027 ? | L'actu de ton argent | videos/2026-11-12-livret-a-court.mp4 (version courte 22 s) |
