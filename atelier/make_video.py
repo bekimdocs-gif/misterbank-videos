@@ -48,7 +48,7 @@ def main(spec_path,out_path):
     open(f"{work}/mouth.js","w").write("window.MOUTH="+json.dumps([round(float(v),3) for v in sm])+";")
     # 3. html
     shutil.copy(f"{HERE}/avatar.js",work)
-    js="\n".join(open(f"{HERE}/{f}").read() for f in ["base.js","engine.js","saynete.js","captions_engine.js","events_main.js"])
+    js="\n".join(open(f"{HERE}/{f}").read() for f in ["base.js","engine.js","saynete.js","captions_engine.js","events_main.js","cover.js"])
     html=('<!DOCTYPE html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:#000}canvas{display:block}</style>'
           '<script src="timeline.js"></script><script src="spec.js"></script><script src="avatar.js"></script><script src="mouth.js"></script>'
           '</head><body><canvas id="c" width="1080" height="1920"></canvas><script>'+js+'</script></body></html>')
@@ -66,6 +66,9 @@ def main(spec_path,out_path):
                 pg.evaluate(f"draw({q})");pg.screenshot(path=f"{work}/t/{q}.jpg",type="jpeg",quality=80)
             print("stills",pg.evaluate("JSON.stringify(SCN.map(s=>[SS[s],SE[s]]))"));return
         json.dump(pg.evaluate("({ev:EVENTS,total:TOTAL})"),open(f"{work}/events.json","w"))
+        # cover image (also baked into the first frames of the video)
+        cover=os.path.splitext(os.path.abspath(out_path))[0]+".jpg"
+        pg.evaluate("drawCover()");pg.screenshot(path=cover,type="jpeg",quality=92)
         # check stills (one per scene, at 80% of scene)
         os.makedirs(work+"/stills",exist_ok=True)
         ss=pg.evaluate("SCN.map(s=>[SS[s],SE[s]])")
@@ -86,6 +89,6 @@ def main(spec_path,out_path):
         "[0:a]asplit=2[v][vsc];[2:a]volume=0.22[m];[m][vsc]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=350[md];[1:a]volume=0.30[f];[v][f][md]amix=inputs=3:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=9[out]",
         "-map","[out]","-ar","48000",f"{work}/mix.wav")
     run("ffmpeg","-v","error","-y","-i",f"{work}/video_only.mp4","-i",f"{work}/mix.wav","-map","0:v","-map","1:a","-c:v","copy","-c:a","aac","-b:a","192k","-shortest",out_path)
-    print(json.dumps({"video":os.path.abspath(out_path),"duree":total,"planche":work+"/planche.jpg"}))
+    print(json.dumps({"video":os.path.abspath(out_path),"couverture":os.path.splitext(os.path.abspath(out_path))[0]+".jpg","duree":total,"planche":work+"/planche.jpg"}))
 
 if __name__=="__main__": main(sys.argv[1],sys.argv[2])

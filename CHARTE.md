@@ -15,6 +15,9 @@
 - Mêmes personnages d'une vidéo à l'autre (le client au pull vert, la cliente au pull corail, le conseiller en costume gris) pour créer l'attachement.
 - Format technique : scènes `saynete` (voir `FICHE.md`), code dans `atelier/saynete.js`. Si une situation demande un décor ou un accessoire qui n'existe pas, l'ajouter dans `atelier/saynete.js` plutôt que de revenir aux cartes de texte.
 
+## Image de présentation (règle depuis le 12 novembre 2026)
+Chaque vidéo a une **couverture avec un titre accrocheur** : avatar de Mister Bank, titre en deux lignes (blanc + jaune), bandeau rouge, logo. Elle sert d'image dans le fil d'actualité et la grille du profil. Champ `cover` de la fiche (voir `FICHE.md`) ; elle est incrustée en première image de la vidéo et envoyée à Metricool (`videoThumbnailUrl`). Le titre doit donner envie de cliquer sans jamais promettre autre chose que le contenu.
+
 ## Structure (25 à 35 s)
 1. Accroche choc dite par l'avatar dès la 1re seconde (question qui touche, chiffre, alerte), chiffre fort à l'écran dans les 2 premières secondes. Mot-clé de recherche dans les 5 premières secondes.
 2. 2 à 3 saynètes avec personnages, un chiffre concret par saynète, un seul message par vidéo.

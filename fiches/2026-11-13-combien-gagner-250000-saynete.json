@@ -1,28 +1,199 @@
 {
  "id": "2026-11-13-combien-gagner-250000-saynete",
  "series": "COMBIEN TU DOIS GAGNER ?",
+ "cover": {
+  "l1": "EMPRUNTER 250 000 €",
+  "l2": "TON SALAIRE MINIMUM",
+  "badge": "LE CALCUL EN 30 SECONDES"
+ },
  "footer": "Contenu pédagogique, pas un conseil personnalisé",
  "sources": "Simulation indicative : 250 000 € sur 300 mois à 3,81 % (taux moyen nov. 2026), assurance 0,30 %/an du capital. Endettement max 35 % (HCSF).",
  "scenes": [
-  {"type":"hook","line1":"EMPRUNTER 250 000 €","line2":"TU DOIS GAGNER COMBIEN ?","badge":"NOVEMBRE 2026","sub":"résidence principale",
-   "cues":[{"text":"Combien tu dois gagner pour emprunter 250 000 € aujourd'hui ?","say":"Combien tu dois gagner pour emprunter deux cent cinquante mille euros aujourd'hui ?"}]},
-  {"type":"saynete","title":"LE PROJET","color":"y","decor":"maison","decorLabel":"250 000 €",
-   "persos":[{"qui":"client","reactions":[{"mot":"Prévois","humeur":"inquiet"}]},{"qui":"cliente","bras":"pointe","reactions":[{"mot":"Prévois","bras":"repos"}]}],
-   "panneau":[{"l":"Durée","v":"25 ans","mot":"25 ans"},{"l":"Taux moyen","sub":"novembre 2026","v":"3,81 %","color":"b","mot":"3,81"},{"l":"Apport : 10 à 20 %","sub":"frais de notaire et de dossier","v":"25 000 à 50 000 €","mot":"10 à 20"}],
-   "cues":[{"text":"250 000 €, sur 25 ans, à 3,81 %.","say":"Deux cent cinquante mille euros, sur vingt-cinq ans, à trois virgule quatre-vingt-un pour cent."},
-           {"text":"Prévois 10 à 20 % d'apport pour les frais de notaire et de dossier.","say":"Prévois dix à vingt pour cent d'apport pour les frais de notaire et de dossier."}]},
-  {"type":"saynete","title":"À LA BANQUE","color":"b","decor":"bureau",
-   "persos":[{"qui":"conseiller","derriere":true,"x":790,"regarde":"gauche","tient":"dossier"},{"qui":"client","x":270,"humeur":"ok","reactions":[{"mot":"1 356","humeur":"choc","bras":"haut"},{"mot":"Maximum","humeur":"ok","bras":"repos"}]}],
-   "tag":{"big":"1 356 € / mois","sub":"1 294 € + 62,50 € d'assurance","mot":"1 356","color":"y","w":620},
-   "note":{"texte":"Maximum : 35 % de tes revenus","mot":"Maximum","color":"r"},
-   "cues":[{"text":"Ta mensualité, assurance comprise : 1 356 €.","say":"Ta mensualité, assurance comprise : mille trois cent cinquante-six euros."},
-           {"text":"Maximum : 35 % de tes revenus.","say":"Maximum : trente-cinq pour cent de tes revenus."}]},
-  {"type":"saynete","title":"LE SALAIRE QU'IL TE FAUT","color":"g","decor":"maison",
-   "persos":[{"qui":"client","x":230,"reactions":[{"mot":"3 874","bras":"hanches"},{"mot":"À deux","bras":"salut"}]},{"qui":"cliente","x":440,"entre":{"mot":"À deux"}}],
-   "tag":{"big":"3 874 € net","sub":"par mois, si tu empruntes seul","mot":"3 874","color":"g","w":600},
-   "note":{"texte":"À deux : 1 937 € chacun","mot":"1 937","color":"y"},
-   "cues":[{"text":"Résultat : seul, il te faut 3 874 € net par mois. À deux, 1 937 € chacun.","say":"Résultat : seul, il te faut trois mille huit cent soixante-quatorze euros net par mois. À deux, mille neuf cent trente-sept euros chacun."}]},
-  {"type":"cta","main":"ABONNE-TOI","sub":"pour comprendre ton crédit","next":["Ton montant en commentaire :","je fais le calcul en vidéo"],
-   "cues":[{"text":"Écris ton montant en commentaire, je fais le calcul. Et abonne-toi !"}]}
+  {
+   "type": "hook",
+   "line1": "EMPRUNTER 250 000 €",
+   "line2": "TU DOIS GAGNER COMBIEN ?",
+   "badge": "NOVEMBRE 2026",
+   "sub": "résidence principale",
+   "cues": [
+    {
+     "text": "Combien tu dois gagner pour emprunter 250 000 € aujourd'hui ?",
+     "say": "Combien tu dois gagner pour emprunter deux cent cinquante mille euros aujourd'hui ?"
+    }
+   ]
+  },
+  {
+   "type": "saynete",
+   "title": "LE PROJET",
+   "color": "y",
+   "decor": "maison",
+   "decorLabel": "250 000 €",
+   "persos": [
+    {
+     "qui": "client",
+     "reactions": [
+      {
+       "mot": "Prévois",
+       "humeur": "inquiet"
+      }
+     ]
+    },
+    {
+     "qui": "cliente",
+     "bras": "pointe",
+     "reactions": [
+      {
+       "mot": "Prévois",
+       "bras": "repos"
+      }
+     ]
+    }
+   ],
+   "panneau": [
+    {
+     "l": "Durée",
+     "v": "25 ans",
+     "mot": "25 ans"
+    },
+    {
+     "l": "Taux moyen",
+     "sub": "novembre 2026",
+     "v": "3,81 %",
+     "color": "b",
+     "mot": "3,81"
+    },
+    {
+     "l": "Apport : 10 à 20 %",
+     "sub": "frais de notaire et de dossier",
+     "v": "25 000 à 50 000 €",
+     "mot": "10 à 20"
+    }
+   ],
+   "cues": [
+    {
+     "text": "250 000 €, sur 25 ans, à 3,81 %.",
+     "say": "Deux cent cinquante mille euros, sur vingt-cinq ans, à trois virgule quatre-vingt-un pour cent."
+    },
+    {
+     "text": "Prévois 10 à 20 % d'apport pour les frais de notaire et de dossier.",
+     "say": "Prévois dix à vingt pour cent d'apport pour les frais de notaire et de dossier."
+    }
+   ]
+  },
+  {
+   "type": "saynete",
+   "title": "À LA BANQUE",
+   "color": "b",
+   "decor": "bureau",
+   "persos": [
+    {
+     "qui": "conseiller",
+     "derriere": true,
+     "x": 790,
+     "regarde": "gauche",
+     "tient": "dossier"
+    },
+    {
+     "qui": "client",
+     "x": 270,
+     "humeur": "ok",
+     "reactions": [
+      {
+       "mot": "1 356",
+       "humeur": "choc",
+       "bras": "haut"
+      },
+      {
+       "mot": "Maximum",
+       "humeur": "ok",
+       "bras": "repos"
+      }
+     ]
+    }
+   ],
+   "tag": {
+    "big": "1 356 € / mois",
+    "sub": "1 294 € + 62,50 € d'assurance",
+    "mot": "1 356",
+    "color": "y",
+    "w": 620
+   },
+   "note": {
+    "texte": "Maximum : 35 % de tes revenus",
+    "mot": "Maximum",
+    "color": "r"
+   },
+   "cues": [
+    {
+     "text": "Ta mensualité, assurance comprise : 1 356 €.",
+     "say": "Ta mensualité, assurance comprise : mille trois cent cinquante-six euros."
+    },
+    {
+     "text": "Maximum : 35 % de tes revenus.",
+     "say": "Maximum : trente-cinq pour cent de tes revenus."
+    }
+   ]
+  },
+  {
+   "type": "saynete",
+   "title": "LE SALAIRE QU'IL TE FAUT",
+   "color": "g",
+   "decor": "maison",
+   "persos": [
+    {
+     "qui": "client",
+     "x": 230,
+     "reactions": [
+      {
+       "mot": "3 874",
+       "bras": "hanches"
+      },
+      {
+       "mot": "À deux",
+       "bras": "salut"
+      }
+     ]
+    },
+    {
+     "qui": "cliente",
+     "x": 440,
+     "entre": {
+      "mot": "À deux"
+     }
+    }
+   ],
+   "tag": {
+    "big": "3 874 € net",
+    "sub": "par mois, si tu empruntes seul",
+    "mot": "3 874",
+    "color": "g",
+    "w": 600
+   },
+   "note": {
+    "texte": "À deux : 1 937 € chacun",
+    "mot": "1 937",
+    "color": "y"
+   },
+   "cues": [
+    {
+     "text": "Résultat : seul, il te faut 3 874 € net par mois. À deux, 1 937 € chacun.",
+     "say": "Résultat : seul, il te faut trois mille huit cent soixante-quatorze euros net par mois. À deux, mille neuf cent trente-sept euros chacun."
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "main": "ABONNE-TOI",
+   "sub": "pour comprendre ton crédit",
+   "next": [
+    "Ton montant en commentaire :",
+    "je fais le calcul en vidéo"
+   ],
+   "cues": [
+    {
+     "text": "Écris ton montant en commentaire, je fais le calcul. Et abonne-toi !"
+    }
+   ]
+  }
  ]
 }

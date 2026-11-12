@@ -6,9 +6,17 @@
  "series": "L'ACTU DE TON ARGENT",            // bandeau en haut (ou "LES SECRETS DE TON BANQUIER · ÉP. N"), null pour aucun
  "footer": "Contenu pédagogique, pas un conseil personnalisé",
  "sources": "Sources : ... (date)",            // affiché en petit à la fin, obligatoire si chiffres
+ "cover": {"l1": "1 € DÉPENSÉ", "l2": "8 € DE FRAIS ?!", "badge": "LE PIÈGE DU DÉCOUVERT"},   // image de présentation, OBLIGATOIRE
  "scenes": [ ... ]
 }
 ```
+
+### Couverture (`cover`) — obligatoire
+Image de présentation de la vidéo (fil d'actualité, grille du profil), avec le **titre accrocheur**. Le générateur la dessine, l'enregistre à côté de la vidéo (`videos/<nom>.jpg`) et l'incruste en toute première image de la vidéo.
+- `l1` (blanc, ≤ 20 caractères) + `l2` (jaune, ≤ 20 caractères) = le titre accrocheur : un chiffre ou une question qui pique la curiosité, compréhensible sans le son ni la description. `badge` (rouge, ≤ 26 caractères) = la promesse ou le contexte.
+- Exemples : « 1 € DÉPENSÉ / 8 € DE FRAIS ?! / LE PIÈGE DU DÉCOUVERT », « EMPRUNTER 250 000 € / TON SALAIRE MINIMUM / LE CALCUL EN 30 SECONDES ».
+- Pas de promesse mensongère : le titre doit correspondre exactement au contenu. Si `cover` est absent, le générateur reprend `line1`, `line2`, `badge` du hook.
+- Vérifier l'image `videos/<nom>.jpg` (Read) : titre lisible en petit, rien de coupé.
 
 Chaque scène a `type` et `cues` (phrases dites par l'avatar). Une cue = `{"text": "...", "say": "...", "cap": "..."}` :
 - `text` : phrase (affichée en sous-titres) ; `say` (optionnel) : version écrite en toutes lettres pour la voix (nombres décimaux, sigles) ;

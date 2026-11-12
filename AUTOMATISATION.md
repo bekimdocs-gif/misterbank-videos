@@ -25,13 +25,14 @@ Objectif : chaque jour, 2 vidéos TikTok publiées automatiquement via Metricool
 ## 5. Fabriquer
 - Écrire `fiches/AAAA-MM-JJ-sujet.json` (format `FICHE.md`), **25 à 35 s** : accroche choc dite par l'avatar dès la 1re seconde, chiffre fort dans les 2 premières secondes (`line2` ou `badge`), puis **2 à 3 saynètes avec personnages (`type: saynete`) — obligatoire pour toutes les vidéos depuis le 12/11/2026, plus de cartes de texte seules** —, un seul message. Chaque saynète : une situation jouée, une réaction, un chiffre fort en étiquette.
 - `cd atelier && python3 make_video.py ../fiches/X.json ../videos/AAAA-MM-JJ-sujet.mp4`
+- **Couverture** : remplir `cover` dans la fiche (titre accrocheur, voir `FICHE.md`). Le générateur crée `videos/AAAA-MM-JJ-sujet.jpg` ; la regarder (Read) et la committer avec la vidéo.
 - Regarder la planche `videos/AAAA-MM-JJ-sujet_build/planche.jpg` (Read) : textes lisibles, pas de chevauchement, personnages visibles et non masqués par les étiquettes. Corriger la fiche et regénérer si besoin.
 - Supprimer le dossier `_build` (ne pas le committer).
 
 ## 6. Publier
-- `git add fiches videos HISTORIQUE.md IDEES.md && git commit && git push` (avant le push : `git fetch origin main && git rebase origin/main`).
+- `git add fiches videos (vidéo .mp4 + couverture .jpg) HISTORIQUE.md IDEES.md && git commit && git push` (avant le push : `git fetch origin main && git rebase origin/main`).
 - Lien public : `https://raw.githubusercontent.com/bekimdocs-gif/misterbank-videos/main/videos/<fichier>.mp4` — vérifier qu'il répond 200 (`curl -sI`).
-- Metricool `createScheduledPost` : blogId 8028968, date `AAAA-MM-JJT12:00:00+01:00` (ou 18:00), info avec `autoPublish: true`, `providers: [{"network":"tiktok"}]`, `media: [lien]`, `text` = description, `tiktokData` avec `title` = même description (obligatoire), `privacyOption: "PUBLIC_TO_EVERYONE"`, `isAigc: true`, `autoAddMusic: false`, `publicationDate: {dateTime, timezone: "Europe/Paris"}`.
+- Metricool `createScheduledPost` : blogId 8028968, date `AAAA-MM-JJT12:00:00+01:00` (ou 18:00), info avec `autoPublish: true`, `providers: [{"network":"tiktok"}]`, `media: [lien]`, **`videoThumbnailUrl` = lien public de la couverture `.jpg` (même adresse que la vidéo, extension .jpg ; vérifier qu'il répond 200)**, `text` = description, `tiktokData` avec `title` = même description (obligatoire), `privacyOption: "PUBLIC_TO_EVERYONE"`, `isAigc: true`, `autoAddMusic: false`, `publicationDate: {dateTime, timezone: "Europe/Paris"}`.
 - Mettre à jour `HISTORIQUE.md` (et cocher `IDEES.md`), commit + push.
 
 ## 7. Compte rendu
