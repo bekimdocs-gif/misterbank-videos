@@ -48,7 +48,7 @@ def main(spec_path,out_path):
     open(f"{work}/mouth.js","w").write("window.MOUTH="+json.dumps([round(float(v),3) for v in sm])+";")
     # 3. html
     shutil.copy(f"{HERE}/avatar.js",work)
-    js="\n".join(open(f"{HERE}/{f}").read() for f in ["base.js","engine.js","captions_engine.js","events_main.js"])
+    js="\n".join(open(f"{HERE}/{f}").read() for f in ["base.js","engine.js","saynete.js","captions_engine.js","events_main.js"])
     html=('<!DOCTYPE html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:#000}canvas{display:block}</style>'
           '<script src="timeline.js"></script><script src="spec.js"></script><script src="avatar.js"></script><script src="mouth.js"></script>'
           '</head><body><canvas id="c" width="1080" height="1920"></canvas><script>'+js+'</script></body></html>')
@@ -60,6 +60,11 @@ def main(spec_path,out_path):
         errs=[];pg.on("pageerror",lambda e:errs.append(str(e)))
         pg.goto("file://"+work+"/index.html");pg.wait_for_timeout(600);pg.evaluate("document.fonts.ready")
         if errs: raise RuntimeError("JS error: "+"; ".join(errs))
+        if os.environ.get("STILLS"):
+            os.makedirs(work+"/t",exist_ok=True)
+            for q in os.environ["STILLS"].split(","):
+                pg.evaluate(f"draw({q})");pg.screenshot(path=f"{work}/t/{q}.jpg",type="jpeg",quality=80)
+            print("stills",pg.evaluate("JSON.stringify(SCN.map(s=>[SS[s],SE[s]]))"));return
         json.dump(pg.evaluate("({ev:EVENTS,total:TOTAL})"),open(f"{work}/events.json","w"))
         # check stills (one per scene, at 80% of scene)
         os.makedirs(work+"/stills",exist_ok=True)

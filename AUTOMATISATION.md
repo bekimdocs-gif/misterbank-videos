@@ -23,9 +23,9 @@ Objectif : chaque jour, 2 vidéos TikTok publiées automatiquement via Metricool
 - Si un fait ne peut pas être confirmé : le retirer ou changer de sujet.
 
 ## 5. Fabriquer
-- Écrire `fiches/AAAA-MM-JJ-sujet.json` (format `FICHE.md`), **25 à 35 s** : accroche choc dite par l'avatar dès la 1re seconde, chiffre fort dans les 2 premières secondes (`line2` ou `badge`), 2 à 3 points maximum, un seul message.
+- Écrire `fiches/AAAA-MM-JJ-sujet.json` (format `FICHE.md`), **25 à 35 s** : accroche choc dite par l'avatar dès la 1re seconde, chiffre fort dans les 2 premières secondes (`line2` ou `badge`), puis **2 à 3 saynètes avec personnages (`type: saynete`) — obligatoire pour toutes les vidéos depuis le 12/11/2026, plus de cartes de texte seules** —, un seul message. Chaque saynète : une situation jouée, une réaction, un chiffre fort en étiquette.
 - `cd atelier && python3 make_video.py ../fiches/X.json ../videos/AAAA-MM-JJ-sujet.mp4`
-- Regarder la planche `videos/AAAA-MM-JJ-sujet_build/planche.jpg` (Read) : textes lisibles, pas de chevauchement. Corriger la fiche et regénérer si besoin.
+- Regarder la planche `videos/AAAA-MM-JJ-sujet_build/planche.jpg` (Read) : textes lisibles, pas de chevauchement, personnages visibles et non masqués par les étiquettes. Corriger la fiche et regénérer si besoin.
 - Supprimer le dossier `_build` (ne pas le committer).
 
 ## 6. Publier

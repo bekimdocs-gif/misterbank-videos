@@ -1,0 +1,18 @@
+{
+ "id": "2026-11-12-commissions-intervention",
+ "series": "LES SECRETS DE TON BANQUIER",
+ "footer": "Contenu pédagogique, pas un conseil personnalisé · plafonds légaux, ta banque peut facturer moins",
+ "sources": "Sources : Code monétaire et financier (R312-4-1, L312-1-5), Banque de France — nov. 2026",
+ "scenes": [
+  {"type":"hook","line1":"1 € DÉPENSÉ","line2":"8 € DE FRAIS ?","badge":"COMMISSION D'INTERVENTION",
+   "cues":[{"text":"Un café à 1 € peut te coûter 8 € de frais !","say":"Un café à un euro peut te coûter huit euros de frais !"}]},
+  {"type":"sk_comptoir","title":"AU-DELÀ DU DÉCOUVERT AUTORISÉ","fee":"+8 €","feeSub":"commission d'intervention","feeKw":"jusqu",
+   "cues":[{"text":"Au-delà de ton découvert autorisé, chaque opération déclenche une commission d'intervention : jusqu'à 8 €.","say":"Au-delà de ton découvert autorisé, chaque opération déclenche une commission d'intervention : jusqu'à huit euros."}]},
+  {"type":"sk_compteur","title":"10 OPÉRATIONS","cap":"PLAFOND : 80 € PAR MOIS",
+   "cues":[{"text":"10 opérations, 80 € : c'est le plafond par mois.","say":"Dix opérations, quatre-vingts euros : c'est le plafond par mois."}]},
+  {"type":"sk_calendrier","title":"PRÉLEVÉ PLUS TARD","hit":"−80 €","hitSub":"commissions d'intervention","hitKw":"jusqu","note":"Prévenu 14 jours avant, sur ton relevé",
+   "cues":[{"text":"Et attention : c'est prélevé plus tard, jusqu'à un mois et demi après !"}]},
+  {"type":"cta","main":"ABONNE-TOI","sub":"pour éviter les frais inutiles",
+   "cues":[{"text":"Surveille ton solde, et abonne-toi !"}]}
+ ]
+}

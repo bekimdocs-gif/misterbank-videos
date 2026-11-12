@@ -7,10 +7,18 @@
 - Voix : fr-FR-RemyMultilingualNeural, dynamique (+12 %).
 - Hashtag de marque : #misterbank.
 
+## Animation : des personnages en scène (règle depuis le 12 novembre 2026)
+**Toutes les vidéos sont animées avec des personnages en pied qui jouent la situation** (saynètes), y compris celles déjà programmées. Mister Bank raconte en haut de l'écran (avatar rond), et en dessous un client, une cliente, un couple ou le conseiller vivent ce qu'il explique : ils entrent en marchant, réagissent (content, inquiet, choqué), tiennent une carte, un téléphone ou un dossier, dans un décor simple (comptoir, bureau de banque, maison).
+- Chaque idée = une saynète : une situation, une réaction, un chiffre fort qui « tombe » (étiquette) au moment où la voix le dit.
+- Les cartes de texte seules (`point`, `table`, `conseil`) ne sont plus utilisées comme scènes principales. Les chiffres passent par le panneau, l'étiquette ou le bandeau d'une saynète.
+- Un changement visible toutes les 2 à 3 secondes : entrée d'un personnage, geste, changement d'humeur, étiquette, bulle.
+- Mêmes personnages d'une vidéo à l'autre (le client au pull vert, la cliente au pull corail, le conseiller en costume gris) pour créer l'attachement.
+- Format technique : scènes `saynete` (voir `FICHE.md`), code dans `atelier/saynete.js`. Si une situation demande un décor ou un accessoire qui n'existe pas, l'ajouter dans `atelier/saynete.js` plutôt que de revenir aux cartes de texte.
+
 ## Structure (25 à 35 s)
 1. Accroche choc dite par l'avatar dès la 1re seconde (question qui touche, chiffre, alerte), chiffre fort à l'écran dans les 2 premières secondes. Mot-clé de recherche dans les 5 premières secondes.
-2. 2 à 3 points numérotés, un chiffre concret par point, un seul message par vidéo.
-3. Conseil de banquier (avis personnel, prudent).
+2. 2 à 3 saynètes avec personnages, un chiffre concret par saynète, un seul message par vidéo.
+3. Conseil de banquier (avis personnel, prudent), donné dans la dernière saynète (bulle ou bandeau).
 4. Fin : abonnement + suite annoncée (prochain épisode) ou « partage à quelqu'un que ça concerne ».
 5. Mentions : sources datées, « contenu pédagogique, pas un conseil personnalisé ».
 
