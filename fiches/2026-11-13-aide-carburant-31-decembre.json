@@ -1,0 +1,37 @@
+{
+ "id": "2026-11-13-aide-carburant-31-decembre",
+ "series": "L'ACTU DE TON ARGENT",
+ "cover": {"l1": "100 € POUR TON PLEIN", "l2": "AVANT LE 31/12", "badge": "AIDE CARBURANT : TU Y AS DROIT ?"},
+ "footer": "Contenu pédagogique, pas un conseil personnalisé · conditions complètes sur service-public.gouv.fr",
+ "sources": "Source : service-public.gouv.fr, « Indemnité carburant » (A18903, mise à jour 27/10/2026), consultée le 13/11/2026",
+ "scenes": [
+  {"type": "hook", "line1": "100 € D'AIDE CARBURANT", "line2": "AVANT LE 31 DÉCEMBRE", "badge": "TU Y AS DROIT ?",
+   "cues": [{"text": "100 € pour ton plein : tu as jusqu'au 31 décembre pour la demander !", "say": "Cent euros pour ton plein : tu as jusqu'au trente et un décembre pour la demander !"}]},
+  {"type": "saynete", "title": "QUI Y A DROIT ?", "color": "y",
+   "persos": [{"qui": "client", "x": 300, "taille": 0.8, "tient": "telephone", "humeur": "ok",
+     "reactions": [{"mot": "22 770", "humeur": "inquiet"}]}],
+   "panneau": [
+     {"l": "Trajet domicile-travail", "sub": "par trajet", "v": "15 km et +", "color": "y", "mot": "15 km"},
+     {"l": "Ou pour ton travail", "sub": "par an", "v": "8 000 km", "color": "b", "mot": "8 000"},
+     {"l": "Revenu fiscal 2024", "sub": "par part", "v": "≤ 22 770 €", "color": "g", "mot": "22 770"}],
+   "note": {"texte": "Essence, diesel ou hybride non rechargeable", "mot": "voiture"},
+   "cues": [
+     {"text": "Tu fais au moins 15 km pour aller au travail, ou 8 000 km par an pour ton boulot, avec une voiture essence, diesel ou hybride non rechargeable.", "say": "Tu fais au moins quinze kilomètres pour aller au travail, ou huit mille kilomètres par an pour ton boulot, avec une voiture essence, diesel ou hybride non rechargeable."},
+     {"text": "Et ton revenu fiscal 2024 ne dépasse pas 22 770 € par part.", "say": "Et ton revenu fiscal deux mille vingt-quatre ne dépasse pas vingt-deux mille sept cent soixante-dix euros par part."}]},
+  {"type": "saynete", "title": "EN CLAIR", "color": "g", "decor": "maison",
+   "persos": [{"qui": "client", "x": 230, "humeur": "ok", "reactions": [{"mot": "2 050", "humeur": "content", "bras": "haut"}]},
+              {"qui": "cliente", "x": 440, "entre": {"mot": "couple"}}],
+   "tag": {"big": "≈ 2 050 € net", "sub": "par mois, personne seule", "mot": "2 050", "color": "g", "w": 600},
+   "note": {"texte": "Couple + 2 enfants : ≈ 6 100 €/mois", "mot": "couple", "color": "y"},
+   "cues": [{"text": "En clair : environ 2 050 € net par mois si tu es seul, 6 100 € pour un couple avec deux enfants.", "say": "En clair : environ deux mille cinquante euros net par mois si tu es seul, six mille cent euros pour un couple avec deux enfants."}]},
+  {"type": "saynete", "title": "COMMENT LA DEMANDER", "color": "b",
+   "persos": [{"qui": "cliente", "x": 300, "tient": "telephone", "humeur": "ok", "reactions": [{"mot": "10 jours", "humeur": "content", "bras": "salut"}]}],
+   "tag": {"big": "impots.gouv.fr", "sub": "ton espace, avant le 31/12", "mot": "impots", "color": "b", "w": 640},
+   "note": {"texte": "Déjà touchée cette année ? C'est automatique", "mot": "Déjà", "color": "g"},
+   "cues": [
+     {"text": "Fais la demande dans ton espace impots.gouv.fr : l'argent arrive environ 10 jours après.", "say": "Fais la demande dans ton espace impôts point gouv point f r : l'argent arrive environ dix jours après."},
+     {"text": "Déjà touchée cette année ? Rien à faire, elle est versée automatiquement."}]},
+  {"type": "cta", "main": "PARTAGE", "sub": "à quelqu'un qui roule beaucoup",
+   "cues": [{"text": "Partage à quelqu'un que ça concerne, et abonne-toi !"}]}
+ ]
+}

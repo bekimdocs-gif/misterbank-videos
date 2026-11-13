@@ -2,6 +2,8 @@
 
 | Date de publication | Créneau | Sujet | Série | Fichier |
 |---|---|---|---|---|
+| 2026-11-13 | 18 h | Découvert ép. 1/8 (J-7) : vrai ou faux « ton découvert supprimé le 20/11 » → FAUX, les autorisations accordées avant le 20/11 ne sont pas concernées (service-public A18569, réponses ministérielles Sénat) | Série DÉCOUVERT J-X · ép. 1/8 | videos/2026-11-13-decouvert-ep1-vrai-faux.mp4 (23 s) — suite annoncée : ép. 2/8 « ce que ta banque va vérifier » |
+| 2026-11-13 | 12 h | Aide carburant 100 € : conditions (15 km / 8 000 km, RFR 2024 ≤ 22 770 €/part) et demande avant le 31/12 sur impots.gouv.fr | L'actu de ton argent | videos/2026-11-13-aide-carburant-31-decembre.mp4 (33 s) |
 | 2026-11-13, puis 16, 18 et 20/11 | 8 h (hors créneaux automatiques) | Commissions d'intervention : 1 € dépensé, jusqu'à 8 € de frais (plafond 80 €/mois, prélevé plus tard) | Les secrets de ton banquier (saynètes) | videos/2026-11-13-commissions-intervention.mp4 (18 s, publiée 4 fois à la demande de Mister Bank) |
 | 2026-11-11 | ~20 h | Poutine menace l'Europe : 3 impacts pour ton argent | L'actu de ton argent | videos/2026-11-12-poutine-impact-argent.mp4 (publiée à la main) |
 | 2026-11-11 | ~14 h 30 | Ta banque peut faire faillite ? (Paraguay, garantie 100 000 €) | actu | publiée à la main |

@@ -11,6 +11,7 @@
 |---|---|---|---|---|
 | 2026-11-11 13:30 | 4 | 877 | Découvert 20 novembre (158 · 11,1 s) | 5 vidéos publiées en 1 h, compte neuf |
 | 2026-11-12 08:35 | 10 | 1 875 | Faillite banque Paraguay (286 · 7,5 s) ; meilleure rétention : Découvert 20 novembre (277 · 12,6 s, 26 j'aime, 4 partages) | 8 vidéos ; « Poutine 3 impacts » 258 vues · 8,8 s · 1 abonné en 13 h ; ép. 1 négocier taux bloqué à 3 vues |
+| 2026-11-13 08:40 | 12 | ≈ 2 520 (10 vidéos sur 7 j) | Faillite banque Paraguay (300 · 7,5 s) ; meilleure rétention et engagement : Découvert 20 novembre (282 · 12,5 s, 26 j'aime, 4 partages, 2 abonnés) | Poutine 264 · 8,7 s ; ép. 2 refus crédit 259 · 4,7 s ; Livret A 242 · 4,2 s ; commissions d'intervention (publiée 8 h) 59 vues · 5,2 s · 10,5 % vue en entier ; ép. 1 négocier taux absent des données ; 69 j'aime au total |
 
 ## Comment relever les statistiques
 - Windsor.ai (connecteur `tiktok_organic`, `get_data`, sans `force_refresh` — offre d'essai) : champs `video_create_datetime, video_caption, video_duration, video_views_count, video_average_time_watched, video_full_watched_rate, video_likes, video_comments, video_shares, video_favorites, video_new_followers`, période `last_7dT` ; compte : `total_followers_count, total_likes, videos_count`.

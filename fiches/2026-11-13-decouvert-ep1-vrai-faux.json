@@ -1,0 +1,97 @@
+{
+ "id": "2026-11-13-decouvert-ep1-vrai-faux",
+ "series": "DÉCOUVERT : J-7 · ÉP. 1/8",
+ "cover": {
+  "l1": "TON DÉCOUVERT",
+  "l2": "SUPPRIMÉ LE 20/11 ?",
+  "badge": "VRAI OU FAUX · ÉP. 1/8"
+ },
+ "footer": "Contenu pédagogique, pas un conseil personnalisé",
+ "sources": "Sources : service-public.gouv.fr (A18569, mise à jour 12/11/2026) ; réponses ministérielles au Sénat n° 07194 (12/03/2026), 06668 et 06651 (30/04/2026) ; ordonnance n° 2025-880",
+ "scenes": [
+  {
+   "type": "hook",
+   "line1": "TON DÉCOUVERT",
+   "line2": "SUPPRIMÉ LE 20/11 ?",
+   "badge": "VRAI OU FAUX",
+   "sub": "épisode 1 sur 8 · J-7",
+   "cues": [
+    {
+     "text": "Ton découvert supprimé le 20 novembre ? Vrai ou faux ?",
+     "say": "Ton découvert supprimé le vingt novembre ? Vrai ou faux ?"
+    },
+    {
+     "text": "Je suis banquier, je te réponds."
+    }
+   ]
+  },
+  {
+   "type": "saynete",
+   "title": "LA RÉPONSE",
+   "color": "g",
+   "decor": "bureau",
+   "persos": [
+    {
+     "qui": "conseiller",
+     "derriere": true,
+     "x": 790,
+     "regarde": "gauche",
+     "tient": "dossier"
+    },
+    {
+     "qui": "cliente",
+     "x": 290,
+     "humeur": "inquiet",
+     "reactions": [
+      {
+       "mot": "Faux",
+       "humeur": "content",
+       "bras": "haut"
+      },
+      {
+       "mot": "nouveaux",
+       "humeur": "ok",
+       "bras": "repos"
+      }
+     ]
+    }
+   ],
+   "tag": {
+    "big": "FAUX",
+    "sub": "ton découvert actuel reste en place",
+    "mot": "Faux",
+    "color": "g",
+    "w": 600
+   },
+   "note": {
+    "texte": "Nouvelles règles = nouveaux découverts",
+    "mot": "nouveaux",
+    "color": "y"
+   },
+   "cues": [
+    {
+     "text": "Faux ! Les découverts accordés avant le 20 novembre ne sont pas concernés par les nouvelles règles.",
+     "say": "Faux ! Les découverts accordés avant le vingt novembre ne sont pas concernés par les nouvelles règles."
+    },
+    {
+     "text": "Ce qui change, ce sont les nouveaux découverts, accordés à partir du 20 novembre, même les petits.",
+     "say": "Ce qui change, ce sont les nouveaux découverts, accordés à partir du vingt novembre, même les petits."
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "main": "ABONNE-TOI",
+   "sub": "la série continue demain",
+   "next": [
+    "Demain · ép. 2/8 :",
+    "ce que ta banque va vérifier"
+   ],
+   "cues": [
+    {
+     "text": "Et toi, tu es à découvert combien de jours par mois ? Dis-le en commentaire. Demain : ce que ta banque va vérifier. Abonne-toi !"
+    }
+   ]
+  }
+ ]
+}

@@ -18,5 +18,15 @@
 - [ ] Crédit renouvelable : pourquoi s'en méfier
 - [ ] Budget 50/30/20 expliqué simplement
 
+## Série spéciale DÉCOUVERT (18 h, 13 → 20/11/2026)
+- [x] Ép. 1/8 (13/11, J-7) : vrai ou faux, découvert supprimé ? → faux (non rétroactif)
+- [ ] Ép. 2/8 : ce que ta banque va vérifier (ANNONCÉ)
+- [ ] Ép. 3/8 : refus de découvert, que faire
+- [ ] Ép. 4/8 : dans le rouge depuis plus de 3 mois
+- [ ] Ép. 5/8 : le vrai coût d'un découvert
+- [ ] Ép. 6/8 : paiement en 3 ou 4 fois
+- [ ] Ép. 7/8 : J-1, 3 choses à vérifier
+- [ ] Ép. 8/8 : JOUR J, le récap
+
 ## L'actu de ton argent (actualité, 12 h)
-Chercher chaque jour l'actualité récente (moins de 7 jours) qui touche le portefeuille des Français : taux immobiliers, Livret A/LEP, budget de l'État, impôts, réforme bancaire, inflation, BCE, aides (PTZ, chèque énergie)…
+Déjà traité : aide carburant 100 € (13/11). Chercher chaque jour l'actualité récente (moins de 7 jours) qui touche le portefeuille des Français : taux immobiliers, Livret A/LEP, budget de l'État, impôts, réforme bancaire, inflation, BCE, aides (PTZ, chèque énergie)…
