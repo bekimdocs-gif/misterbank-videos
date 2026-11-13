@@ -3,7 +3,7 @@
 Objectif : chaque jour, 2 vidéos TikTok publiées automatiquement via Metricool à **12:00** et **18:00** (Europe/Paris).
 
 ## 1. Préparer
-- Cloner ce dépôt (shallow) et installer : `pip install --break-system-packages edge-tts` (Playwright/Chromium, ffmpeg et numpy sont normalement présents ; sinon les installer).
+- Cloner ce dépôt (shallow) et installer : `pip install --break-system-packages edge-tts faster-whisper` (Playwright/Chromium, ffmpeg et numpy sont normalement présents ; sinon les installer).
 - Lire `CHARTE.md`, `FICHE.md`, `HISTORIQUE.md`, `IDEES.md`, `EXPERTISE.md` et **`STATS.md` (leçons à appliquer)**.
 
 ## 1 bis. Relever les statistiques
@@ -26,9 +26,10 @@ Objectif : chaque jour, 2 vidéos TikTok publiées automatiquement via Metricool
 ## 5. Fabriquer
 - Écrire `fiches/AAAA-MM-JJ-sujet.json` (format `FICHE.md`), **25 à 35 s** : accroche choc dite par l'avatar dès la 1re seconde, chiffre fort dans les 2 premières secondes (`line2` ou `badge`), puis **2 à 3 saynètes avec personnages (`type: saynete`) — obligatoire pour toutes les vidéos depuis le 12/11/2026, plus de cartes de texte seules** —, un seul message. Chaque saynète : une situation jouée, une réaction, un chiffre fort en étiquette.
 - `cd atelier && python3 make_video.py ../fiches/X.json ../videos/AAAA-MM-JJ-sujet.mp4`
+- **Contrôle de la voix (obligatoire)** : `python3 verifier_voix.py ../videos/AAAA-MM-JJ-sujet.mp4`. Il réécoute chaque phrase et la compare au texte. S'il affiche « VOIX À CORRIGER », reformuler la phrase signalée dans la fiche (la voix Rémy écorche certaines tournures, ex. « Je suis banquier, je te réponds » devenait incompréhensible ; « Je suis banquier, alors je te réponds » passe), refabriquer et relancer le contrôle. Ne jamais publier une vidéo qui ne passe pas ce contrôle.
 - **Couverture** : remplir `cover` dans la fiche (titre accrocheur, voir `FICHE.md`). Le générateur crée `videos/AAAA-MM-JJ-sujet.jpg` ; la regarder (Read) et la committer avec la vidéo.
 - Regarder la planche `videos/AAAA-MM-JJ-sujet_build/planche.jpg` (Read) : textes lisibles, pas de chevauchement, personnages visibles et non masqués par les étiquettes. Corriger la fiche et regénérer si besoin.
-- Supprimer le dossier `_build` (ne pas le committer).
+- Supprimer le dossier `_build` après le contrôle de la voix (ne pas le committer).
 
 ## 6. Publier
 - `git add fiches videos (vidéo .mp4 + couverture .jpg) HISTORIQUE.md IDEES.md && git commit && git push` (avant le push : `git fetch origin main && git rebase origin/main`).
