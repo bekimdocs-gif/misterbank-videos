@@ -9,14 +9,22 @@ HERE=os.path.dirname(os.path.abspath(__file__))
 VOICE=os.environ.get("VOICE","fr-FR-RemyMultilingualNeural"); FPS=30
 
 def tts(text,out):
+    # cache : une phrase déjà synthétisée n'est plus redemandée (utile quand le service de voix coupe)
+    import hashlib
+    cdir=os.path.expanduser("~/.cache/misterbank-voix");os.makedirs(cdir,exist_ok=True)
+    cf=os.path.join(cdir,hashlib.sha1((VOICE+"|"+text).encode()).hexdigest()+".mp3")
+    if os.path.exists(cf) and os.path.getsize(cf)>1000: shutil.copy(cf,out); return
+    _tts(text,out)
+    if os.path.exists(out) and os.path.getsize(out)>1000: shutil.copy(out,cf)
+def _tts(text,out):
     import edge_tts, edge_tts.communicate as c
     ca=os.path.expanduser("~/.ccr/ca-bundle.crt")
     if os.path.exists(ca): c._SSL_CTX=ssl.create_default_context(cafile=ca)
     async def go(rate): await edge_tts.Communicate(text,VOICE,**({"rate":rate} if rate else {})).save(out)
     import time
-    for k in range(12):
+    for k in range(4):
         try: asyncio.run(go("+12%")); return
-        except Exception as e: time.sleep(5)
+        except Exception as e: time.sleep(3)
     # secours : le service refuse parfois le réglage de vitesse -> voix normale accélérée de 12 % par ffmpeg
     for k in range(3):
         try:

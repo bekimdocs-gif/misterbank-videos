@@ -158,7 +158,7 @@ function skSaynete(t,i,sc){const t0=sStart(i),G=1400;const col=CC[sc.color||'y']
     const hold=TIENT[p.tient];if(hold&&b1==BRAS.repos)R=hold=='phone'?[1.0,2.4]:[.55,1.7];if(b1==BRAS.salut)R=[2.4,3.3+Math.sin(t*10)*.35];
     const jump=tr>=0?Math.sin(P(t,tr,.4)*Math.PI)*24:0;
     const pos=person(cx,G,p.S,{pal:PAL[p.qui]||PAL.client,flip:p.regarde=='gauche',walk:pw<1&&!p.derriere?t*9:undefined,mood:HUM[hum]||'happy',armL:L,armR:R,holdR:hold,look:1,blink:blinkAt(t,k*1.3),bob:jump||Math.sin(t*2.5+k)*3,tilt:hum=='choc'?-.06:.03*(k%2?-1:1)});
-    p.cx=cx;};
+    p.cx=cx;if(p.nom){ctx.save();ctx.font=`900 30px ${F}`;ctx.font=`900 ${Math.round(34*p.S)}px ${F}`;const w=ctx.measureText(p.nom).width+30*p.S,ny=G-(330+(jump||0)/p.S)*p.S;rr(cx-w/2,ny-21*p.S,w,42*p.S,12*p.S);ctx.fillStyle=p.qui=='conseiller'?COL.y:COL.w;ctx.globalAlpha=cl(pw*2);ctx.shadowColor='rgba(0,0,0,.35)';ctx.shadowBlur=10;ctx.fill();ctx.shadowBlur=0;ctx.fillStyle='#0B1026';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(p.nom,cx,ny+1);ctx.restore();}};
   ctx.save();ctx.beginPath();ctx.rect(0,0,W,1238);ctx.clip();ps.forEach((p,k)=>{if(p.derriere)drawP(p,k);});ctx.restore();
   if(sc.decor)decor(sc.decor,sc,t,i);
   ps.forEach((p,k)=>{if(!p.derriere)drawP(p,k);});

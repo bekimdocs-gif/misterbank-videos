@@ -1,0 +1,214 @@
+{
+ "id": "2026-11-14-entretien-herve-frais",
+ "series": "SIMULATION D'ENTRETIEN",
+ "cover": {
+  "l1": "CLIENTE FURIEUSE",
+  "l2": "QUE VA FAIRE HERVÉ ?",
+  "badge": "64 € DE FRAIS"
+ },
+ "footer": "Situation fictive · contenu pédagogique, pas un conseil personnalisé · geste commercial non garanti",
+ "sources": "Plafonds : Code monétaire et financier, Banque de France (offre clientèle fragile) — nov. 2026",
+ "scenes": [
+  {
+   "type": "hook",
+   "line1": "CLIENTE FURIEUSE",
+   "line2": "QUE VA FAIRE HERVÉ ?",
+   "badge": "SIMULATION D'ENTRETIEN",
+   "cues": [
+    {
+     "text": "64 € de frais en un mois : Sophie est furieuse. Que va faire Hervé, son conseiller ?",
+     "say": "Soixante-quatre euros de frais en un mois : Sophie est furieuse. Que va faire Hervé, son conseiller ?"
+    }
+   ]
+  },
+  {
+   "type": "saynete",
+   "title": "L'ENTRETIEN",
+   "color": "r",
+   "decor": "bureau",
+   "persos": [
+    {
+     "qui": "conseiller",
+     "derriere": true,
+     "x": 790,
+     "regarde": "gauche",
+     "humeur": "ok",
+     "nom": "HERVÉ"
+    },
+    {
+     "qui": "cliente",
+     "x": 270,
+     "humeur": "choc",
+     "bras": "haut",
+     "reactions": [
+      {
+       "mot": "Il écoute",
+       "humeur": "inquiet",
+       "bras": "repos"
+      }
+     ],
+     "nom": "SOPHIE"
+    }
+   ],
+   "bulles": [
+    {
+     "perso": 1,
+     "texte": "64 € de frais ?!",
+     "at": 0.05,
+     "fin": {
+      "mot": "Il écoute"
+     }
+    },
+    {
+     "perso": 0,
+     "texte": "Regardons ensemble.",
+     "mot": "Il écoute"
+    }
+   ],
+   "note": {
+    "texte": "8 commissions d'intervention × 8 €",
+    "mot": "commissions",
+    "color": "r"
+   },
+   "cues": [
+    {
+     "text": "Huit commissions d'intervention à 8 € : 64 €.",
+     "say": "Huit commissions d'intervention à huit euros : soixante-quatre euros."
+    },
+    {
+     "text": "Il écoute, puis il vérifie les plafonds : 8 € par opération, 80 € par mois maximum.",
+     "say": "Il écoute, puis il vérifie les plafonds : huit euros par opération, quatre-vingts euros par mois maximum."
+    }
+   ]
+  },
+  {
+   "type": "saynete",
+   "title": "LE GESTE COMMERCIAL",
+   "color": "g",
+   "decor": "bureau",
+   "persos": [
+    {
+     "qui": "conseiller",
+     "derriere": true,
+     "x": 790,
+     "regarde": "gauche",
+     "tient": "dossier",
+     "reactions": [
+      {
+       "mot": "geste",
+       "bras": "salut",
+       "humeur": "content"
+      }
+     ],
+     "nom": "HERVÉ"
+    },
+    {
+     "qui": "cliente",
+     "x": 270,
+     "humeur": "inquiet",
+     "reactions": [
+      {
+       "mot": "geste",
+       "humeur": "content",
+       "bras": "hanches"
+      }
+     ],
+     "nom": "SOPHIE"
+    }
+   ],
+   "tag": {
+    "big": "GESTE COMMERCIAL",
+    "sub": "remboursement total ou partiel",
+    "mot": "geste",
+    "color": "g",
+    "w": 660
+   },
+   "note": {
+    "texte": "Pas un droit, mais ça se demande",
+    "mot": "droit",
+    "color": "y"
+   },
+   "cues": [
+    {
+     "text": "Premier incident ? Il propose un geste commercial : un remboursement, total ou partiel.",
+     "say": "Premier incident ? Il propose un geste commercial : un remboursement, total ou partiel."
+    },
+    {
+     "text": "Ce n'est pas un droit, mais ça se demande."
+    }
+   ]
+  },
+  {
+   "type": "saynete",
+   "title": "POUR QUE ÇA NE RECOMMENCE PAS",
+   "color": "b",
+   "decor": "bureau",
+   "persos": [
+    {
+     "qui": "conseiller",
+     "derriere": true,
+     "x": 790,
+     "regarde": "gauche",
+     "humeur": "content",
+     "nom": "HERVÉ"
+    },
+    {
+     "qui": "cliente",
+     "x": 270,
+     "tient": "telephone",
+     "humeur": "content",
+     "reactions": [
+      {
+       "mot": "alerte",
+       "bras": "tel"
+      }
+     ],
+     "nom": "SOPHIE"
+    }
+   ],
+   "panneau": [
+    {
+     "l": "Alerte SMS",
+     "sub": "quand ton solde baisse",
+     "v": "✓",
+     "color": "g",
+     "mot": "alerte"
+    },
+    {
+     "l": "Découvert autorisé",
+     "sub": "adapté à ton budget",
+     "v": "✓",
+     "color": "g",
+     "mot": "découvert"
+    },
+    {
+     "l": "Offre clientèle fragile",
+     "sub": "si tu es en difficulté",
+     "v": "20 €/mois max",
+     "color": "y",
+     "mot": "difficulté"
+    }
+   ],
+   "cues": [
+    {
+     "text": "Puis il met en place une alerte SMS sur le solde, et un découvert autorisé adapté.",
+     "say": "Puis il met en place une alerte SMS sur le solde, et un découvert autorisé adapté."
+    },
+    {
+     "text": "En difficulté ? L'offre clientèle fragile plafonne les frais d'incidents à 20 € par mois.",
+     "say": "En difficulté ? L'offre clientèle fragile plafonne les frais d'incidents à vingt euros par mois."
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "main": "COMMENTE",
+   "sub": "tu as déjà obtenu un geste commercial ?",
+   "cues": [
+    {
+     "text": "Et toi, tu as déjà obtenu un geste commercial ? Dis-le en commentaire !"
+    }
+   ]
+  }
+ ]
+}
