@@ -1,0 +1,32 @@
+{
+ "id": "2026-11-13-panne-microsoft-banque",
+ "series": "L'ACTU DE TON ARGENT",
+ "cover": {"l1": "PANNE MICROSOFT", "l2": "BANQUE INJOIGNABLE ?", "badge": "LE BON RÉFLEXE"},
+ "footer": "Contenu pédagogique, pas un conseil personnalisé",
+ "sources": "Sources : Microsoft (status.cloud.microsoft), Ouest-France, Boursorama — 13 nov. 2026",
+ "scenes": [
+  {"type":"hook","line1":"PANNE MICROSOFT","line2":"TA BANQUE INJOIGNABLE ?","badge":"13 NOVEMBRE",
+   "cues":[{"text":"Panne mondiale chez Microsoft : ton mail à ta banque n'arrivera peut-être pas !"}]},
+  {"type":"saynete","title":"PANNE MONDIALE","color":"r","decor":"bureau",
+   "persos":[{"qui":"conseiller","derriere":true,"x":790,"regarde":"gauche","humeur":"inquiet"},
+             {"qui":"client","x":270,"tient":"telephone","reactions":[{"mot":"bloqué","humeur":"choc","bras":"haut"}]}],
+   "tag":{"big":"OUTLOOK EN PANNE","sub":"Teams aussi, depuis jeudi soir","mot":"Outlook","color":"r","w":640},
+   "note":{"texte":"Ton mail peut rester bloqué","mot":"bloqué","color":"y"},
+   "cues":[{"text":"Depuis jeudi soir, Outlook et Teams sont en panne dans le monde entier."},
+           {"text":"Or beaucoup de banques travaillent sur Outlook : ton mail à ton conseiller peut rester bloqué."}]},
+  {"type":"saynete","title":"LE BON RÉFLEXE","color":"g","decor":"bureau",
+   "persos":[{"qui":"conseiller","derriere":true,"x":790,"regarde":"gauche","bras":"salut","humeur":"content"},
+             {"qui":"cliente","x":270,"tient":"telephone","humeur":"inquiet","reactions":[{"mot":"appelle","humeur":"content","bras":"tel"}]}],
+   "tag":{"big":"APPELLE TA BANQUE","sub":"si c'est urgent","mot":"appelle","color":"g","w":640},
+   "note":{"texte":"Sinon, sois patient","mot":"patient","color":"b"},
+   "cues":[{"text":"Mon conseil : si c'est urgent, prends ton téléphone et appelle ton agence."},
+           {"text":"Sinon, sois patient : ton conseiller te répondra dès le retour du service."}]},
+  {"type":"saynete","title":"ATTENTION AUX ARNAQUES","color":"r",
+   "persos":[{"qui":"client","x":300,"tient":"telephone","humeur":"ok","reactions":[{"mot":"escrocs","humeur":"choc"}]}],
+   "tag":{"big":"FAUX NUMÉRO ?","sub":"les escrocs profitent des pannes","mot":"escrocs","color":"r","w":600},
+   "note":{"texte":"Le bon numéro : sur ta carte ou ton appli","mot":"uniquement","color":"g"},
+   "cues":[{"text":"Et attention, les escrocs profitent des pannes : appelle uniquement le numéro inscrit sur ta carte ou dans ton appli."}]},
+  {"type":"cta","main":"PARTAGE","sub":"à quelqu'un qui attend une réponse de sa banque",
+   "cues":[{"text":"Partage à quelqu'un qui attend une réponse de sa banque !"}]}
+ ]
+}
