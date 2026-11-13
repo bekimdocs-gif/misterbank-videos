@@ -6,15 +6,22 @@ Dependencies: pip install --break-system-packages edge-tts ; playwright + chromi
 import asyncio, ssl, os, sys, json, subprocess, shutil, wave
 import numpy as np
 HERE=os.path.dirname(os.path.abspath(__file__))
-VOICE="fr-FR-RemyMultilingualNeural"; FPS=30
+VOICE=os.environ.get("VOICE","fr-FR-RemyMultilingualNeural"); FPS=30
 
 def tts(text,out):
     import edge_tts, edge_tts.communicate as c
     ca=os.path.expanduser("~/.ccr/ca-bundle.crt")
     if os.path.exists(ca): c._SSL_CTX=ssl.create_default_context(cafile=ca)
-    async def go(): await edge_tts.Communicate(text,VOICE,rate="+12%").save(out)
+    async def go(rate): await edge_tts.Communicate(text,VOICE,**({"rate":rate} if rate else {})).save(out)
+    import time
+    for k in range(12):
+        try: asyncio.run(go("+12%")); return
+        except Exception as e: time.sleep(5)
+    # secours : le service refuse parfois le réglage de vitesse -> voix normale accélérée de 12 % par ffmpeg
     for k in range(3):
-        try: asyncio.run(go()); return
+        try:
+            asyncio.run(go(None)); tmp=out+".lent.mp3"; os.replace(out,tmp)
+            subprocess.run(["ffmpeg","-v","error","-y","-i",tmp,"-filter:a","atempo=1.12",out],check=True); os.remove(tmp); return
         except Exception as e:
             if k==2: raise
 def run(*a): subprocess.run(list(a),check=True)
