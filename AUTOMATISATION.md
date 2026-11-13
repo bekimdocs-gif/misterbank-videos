@@ -20,6 +20,7 @@ Objectif : chaque jour, 2 vidéos TikTok publiées automatiquement via Metricool
 
 ## 4. Vérifier les faits
 - Chaque chiffre/règle vérifié sur au moins une source fiable ouverte le jour même. Noter les sources dans la fiche (`sources`).
+- Astuce (13/11/2026) : Légifrance, economie.gouv.fr, impots.gouv.fr et info.gouv.fr ne s'ouvrent pas depuis la tâche ; service-public.gouv.fr (actualités A18569 découvert, A18451 crédit conso, A17785 « ce qui change ») et senat.fr (réponses ministérielles) fonctionnent. Lancer une recherche web limitée à ces domaines avant d'ouvrir les pages.
 - Si un fait ne peut pas être confirmé : le retirer ou changer de sujet.
 
 ## 5. Fabriquer
