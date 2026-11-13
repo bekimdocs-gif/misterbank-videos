@@ -2,6 +2,7 @@
 
 | Date de publication | Créneau | Sujet | Série | Fichier |
 |---|---|---|---|---|
+| 2026-11-14 | 10 h (à la demande de Mister Bank) | Où mettre ton épargne ? La pyramide en 3 étages (précaution : Livret A/LDDS 1,7 %, LEP 2,5 % ; moyen terme : PEL 2 % brut, fonds euros 2,6 % ; long terme : UC 4,7 %, PEA) | Les secrets de ton banquier | videos/2026-11-14-pyramide-epargne.mp4 (39 s) |
 | 2026-11-13 | 9 h 50 (actu urgente, à la demande de Mister Bank) | Panne mondiale Microsoft (Outlook, Teams) : mail à sa banque bloqué → si urgent appeler l'agence, sinon patienter ; attention aux faux numéros | L'actu de ton argent | videos/2026-11-13-panne-microsoft-banque.mp4 (27 s) |
 | 2026-11-13 | 18 h | Découvert ép. 1/8 (J-7) : vrai ou faux « ton découvert supprimé le 20/11 » → FAUX, les autorisations accordées avant le 20/11 ne sont pas concernées (service-public A18569, réponses ministérielles Sénat) | Série DÉCOUVERT J-X · ép. 1/8 | videos/2026-11-13-decouvert-ep1-vrai-faux.mp4 (23 s) — suite annoncée : ép. 2/8 « ce que ta banque va vérifier » |
 | 2026-11-13 | 12 h | Aide carburant 100 € : conditions (15 km / 8 000 km, RFR 2024 ≤ 22 770 €/part) et demande avant le 31/12 sur impots.gouv.fr | L'actu de ton argent | videos/2026-11-13-aide-carburant-31-decembre.mp4 (33 s) |
@@ -17,3 +18,7 @@
 | 2026-11-11 | ~11 h | Combien tu peux emprunter avec ton salaire | — | publiée à la main |
 | 2026-11-11 | ~11 h | Présentation v1 | — | publiée à la main |
 | 2026-11-11 | ~11 h | Les taux montent : les conséquences | — | publiée à la main |
+
+
+## Vidéos test (non publiées)
+- 2026-11-13 : simulation d'entretien « Cliente furieuse : que va faire Hervé ? » (frais, geste commercial, offre clientèle fragile) — videos/2026-11-14-entretien-herve-frais.mp4, test du format dialogue avec prénoms. Ne pas publier sans accord de Mister Bank.
