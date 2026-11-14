@@ -1,0 +1,77 @@
+{
+ "id": "2026-11-15-accepte-refuse-dossier1",
+ "series": "ACCEPTÉ OU REFUSÉ ? · DOSSIER N° 1",
+ "cover": {"l1": "2 800 € EN CDI", "l2": "ACCEPTÉ OU REFUSÉ ?", "badge": "DOSSIER N° 1 · VOTE !"},
+ "footer": "Contenu pédagogique, pas un conseil personnalisé",
+ "sources": "Exemple fictif — chaque banque a ses propres critères",
+ "scenes": [
+  {"type": "hook", "line1": "2 800 € EN CDI", "line2": "ACCEPTÉ OU REFUSÉ ?", "badge": "À TOI DE JOUER", "sub": "dossier n° 1 · exemple fictif",
+   "cues": [
+    {"text": "2 800 euros par mois, en CDI. Crédit immobilier : accepté ou refusé ?", "say": "Deux mille huit cents euros par mois, en C D I. Crédit immobilier : accepté, ou refusé ?"},
+    {"text": "Regarde bien son dossier, et vote en commentaire avant la fin !"}
+   ]},
+  {"type": "saynete", "title": "SES POINTS FORTS", "color": "g", "decor": "bureau",
+   "persos": [
+    {"qui": "conseiller", "derriere": true, "x": 790, "regarde": "gauche", "tient": "dossier", "taille": 0.8},
+    {"qui": "client", "x": 290, "humeur": "content", "taille": 0.8, "nom": "JULIEN",
+     "reactions": [{"mot": "depuis cinq ans", "humeur": "content", "bras": "salut"}, {"mot": "tout va bien", "humeur": "content", "bras": "hanches"}]}
+   ],
+   "panneau": [
+    {"l": "Salaire", "sub": "net par mois", "v": "2 800 €", "color": "g", "mot": "2 800"},
+    {"l": "Contrat", "sub": "depuis 5 ans", "v": "CDI", "color": "g", "mot": "depuis cinq ans"},
+    {"l": "Apport", "sub": "10 % du projet", "v": "20 000 €", "color": "g", "mot": "20 000"}
+   ],
+   "note": {"texte": "Jusque-là, tout va bien…", "mot": "tout va bien", "color": "g"},
+   "cues": [
+    {"text": "Julien gagne 2 800 euros net, en CDI depuis cinq ans.", "say": "Julien gagne deux mille huit cents euros net, en C D I depuis cinq ans."},
+    {"text": "Il a même 20 000 euros d'apport. Jusque-là, tout va bien.", "say": "Il a même vingt mille euros d'apport. Jusque-là, tout va bien."}
+   ]},
+  {"type": "saynete", "title": "MAIS SUR SES RELEVÉS…", "color": "r", "decor": "bureau",
+   "persos": [
+    {"qui": "conseiller", "derriere": true, "x": 790, "regarde": "gauche", "tient": "dossier", "taille": 0.8},
+    {"qui": "client", "x": 290, "humeur": "ok", "taille": 0.8, "nom": "JULIEN",
+     "reactions": [{"mot": "à découvert", "humeur": "inquiet", "bras": "repos"}, {"mot": "paris en ligne", "humeur": "choc", "bras": "haut"}]}
+   ],
+   "panneau": [
+    {"l": "Découvert", "sub": "sur ses relevés", "v": "tous les mois", "color": "r", "mot": "à découvert"},
+    {"l": "Crédit conso", "sub": "déjà en cours", "v": "1", "color": "r", "mot": "crédit conso"},
+    {"l": "Paris en ligne", "sub": "prélèvements réguliers", "v": "chaque semaine", "color": "r", "mot": "paris en ligne"}
+   ],
+   "note": {"texte": "Et ça, ton banquier le voit", "mot": "chaque semaine", "color": "r"},
+   "cues": [
+    {"text": "Mais j'ouvre ses relevés : à découvert tous les mois."},
+    {"text": "Un crédit conso déjà en cours. Et des paris en ligne, chaque semaine."}
+   ]},
+  {"type": "saynete", "title": "ALORS, TON VOTE ?", "color": "y", "decor": "bureau",
+   "persos": [
+    {"qui": "conseiller", "derriere": true, "x": 790, "regarde": "gauche", "tient": "dossier"},
+    {"qui": "client", "x": 290, "humeur": "inquiet", "nom": "JULIEN", "reactions": [{"mot": "Trois", "humeur": "inquiet", "bras": "haut"}]}
+   ],
+   "tags": [
+    {"big": "3", "mot": "Trois", "fin": {"mot": "deux"}, "color": "y", "x": 540, "w": 240},
+    {"big": "2", "mot": "deux", "fin": {"mot": "un…"}, "color": "y", "x": 540, "w": 240},
+    {"big": "1", "mot": "un…", "color": "r", "x": 540, "w": 240}
+   ],
+   "note": {"texte": "ACCEPTÉ ou REFUSÉ ? Écris-le !", "at": 0.05, "color": "y"},
+   "cues": [
+    {"text": "Alors, accepté ou refusé ? Dernière chance pour voter !"},
+    {"text": "Trois, deux, un…", "say": "Trois. Deux. Un."}
+   ]},
+  {"type": "saynete", "title": "LE VERDICT DU BANQUIER", "color": "r", "decor": "bureau",
+   "persos": [
+    {"qui": "conseiller", "derriere": true, "x": 790, "regarde": "gauche", "tient": "dossier"},
+    {"qui": "client", "x": 290, "humeur": "inquiet", "nom": "JULIEN",
+     "reactions": [{"mot": "Refusé", "humeur": "choc", "bras": "haut"}, {"mot": "Mon conseil", "humeur": "ok", "bras": "repos"}]}
+   ],
+   "bulles": [{"perso": 1, "texte": "Quoi ?!", "mot": "Refusé", "fin": {"mot": "Mon conseil"}}],
+   "tag": {"big": "REFUSÉ", "sub": "3 signaux d'alerte", "mot": "Refusé", "color": "r", "x": 730, "w": 460},
+   "note": {"texte": "Exemple fictif, critères selon la banque", "mot": "Le salaire", "color": "y"},
+   "cues": [
+    {"text": "Refusé."},
+    {"text": "Le salaire ne fait pas tout. Découvert, crédit conso, paris en ligne : trois signaux d'alerte pour un banquier."},
+    {"text": "Mon conseil : remets tes comptes au propre quelques mois, puis reviens déposer ton dossier."}
+   ]},
+  {"type": "cta", "main": "ABONNE-TOI", "sub": "tu avais bon ?", "next": ["Mercredi · dossier n° 2 :", "petit salaire, zéro découvert"],
+   "cues": [{"text": "Tu avais bon ? Dis-le en commentaire. Mercredi, dossier numéro 2. Abonne-toi !", "say": "Tu avais bon ? Dis-le en commentaire. Mercredi, dossier numéro deux. Abonne-toi !"}]}
+ ]
+}

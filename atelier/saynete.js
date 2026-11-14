@@ -163,7 +163,7 @@ function skSaynete(t,i,sc){const t0=sStart(i),G=1400;const col=CC[sc.color||'y']
   if(sc.decor)decor(sc.decor,sc,t,i);
   ps.forEach((p,k)=>{if(!p.derriere)drawP(p,k);});
   (sc.bulles||[]).forEach(b=>{const tb=tm(i,b,t0+.3);const p=P(t,tb,.3)*(b.fin?1-P(t,tm(i,b.fin,1e9),.2):1);const pr=ps[b.perso||0];if(p>0&&pr&&pr.cx!==undefined)bulle(pr.cx,G-690*pr.S,b.texte,p);});
-  const tags=sc.tags||(sc.tag?[sc.tag]:[]);tags.forEach((g,k)=>{const tg=tm(i,g,frac(i,.5));const p=P(t,tg,.4);if(p<=0)return;const c=CC[g.color||'r'];const dark=(g.color=='y'||g.color=='g');const x=g.x||(hasP?700:540),y=g.y||(hasP?1040:745);const rot=k%2?.04:-.04;
+  const tags=sc.tags||(sc.tag?[sc.tag]:[]);tags.forEach((g,k)=>{const tg=tm(i,g,frac(i,.5));const p=P(t,tg,.4)*(g.fin?1-P(t,tm(i,g.fin,1e9),.2):1);if(p<=0)return;const c=CC[g.color||'r'];const dark=(g.color=='y'||g.color=='g');const x=g.x||(hasP?700:540),y=g.y||(hasP?1040:745);const rot=k%2?.04:-.04;
     tagBox(x,y,g.w||500,g.sub?190:150,c,p,rot);ctx.save();ctx.translate(x,y);ctx.rotate(rot);txt(g.big,0,g.sub?-22:4,g.big.length>9?78:100,dark?'#0B1026':COL.w,{sc:eb(p),maxW:(g.w||500)-50});if(g.sub)txt(g.sub,0,54,32,dark?'#0B1026':COL.w,{sc:eb(p),w:800,maxW:(g.w||500)-50});ctx.restore();burst(x,y,tg,t,c,16,290);});
   if(sc.note){const n=typeof sc.note=='string'?{texte:sc.note}:sc.note;const pn=P(t,tm(i,n,frac(i,.82)),.4);if(pn>0){const c=CC[n.color||'g'];tagBox(540,1492,860,80,c,pn);txt(n.texte,540,1495,38,(n.color=='r'||n.color=='b')?COL.w:'#0B1026',{sc:eb(pn),maxW:820});}}
 }

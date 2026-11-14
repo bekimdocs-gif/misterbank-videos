@@ -45,8 +45,8 @@ Déjà traité : aide carburant 100 € (13/11), dispense du prélèvement de 12
 - [ ] Livret A ou assurance-vie
 - [ ] Carte à débit immédiat ou différé
 ### Accepté ou refusé ? (mercredi et dimanche, dossiers numérotés)
-- [ ] Dossier n° 1 : bon salaire en CDI mais découvert tous les mois
-- [ ] Dossier n° 2 : petit salaire, zéro découvert, épargne régulière
+- [x] Dossier n° 1 (15/11) : bon salaire en CDI, apport, mais découvert tous les mois + crédit conso + paris en ligne → refusé
+- [ ] Dossier n° 2 : petit salaire, zéro découvert, épargne régulière (ANNONCÉ pour mercredi 18/11 à la fin du dossier n° 1)
 - [ ] Dossier n° 3 : couple, un CDI et un indépendant depuis 1 an
 - [ ] Dossier n° 4 : pas d'apport mais 3 ans de relevés impeccables
 - [ ] Dossier n° 5 : gros apport mais trois crédits conso en cours
