@@ -1,0 +1,114 @@
+{
+ "id": "2026-11-14-decouvert-ep2-ce-que-verifie-banque",
+ "series": "DÉCOUVERT : J-6 · ÉP. 2/8",
+ "cover": {
+  "l1": "NOUVEAU DÉCOUVERT",
+  "l2": "CE QU'ON VÉRIFIE",
+  "badge": "COULISSES · ÉP. 2/8"
+ },
+ "footer": "Contenu pédagogique, pas un conseil personnalisé",
+ "sources": "Source : service-public.gouv.fr, actualité A18569 (mise à jour le 12/11/2026) ; ordonnance n° 2025-880",
+ "scenes": [
+  {
+   "type": "hook",
+   "line1": "NOUVEAU DÉCOUVERT",
+   "line2": "CE QU'ON VÉRIFIE",
+   "badge": "COULISSES DE BANQUIER",
+   "sub": "épisode 2 sur 8 · J-6",
+   "cues": [
+    {
+     "text": "Un découvert après le 20 novembre ? Voilà ce que ta banque peut regarder.",
+     "say": "Un découvert après le vingt novembre ? Voilà ce que ta banque peut regarder."
+    },
+    {
+     "text": "Je suis banquier, alors je te montre les coulisses."
+    }
+   ]
+  },
+  {
+   "type": "saynete",
+   "title": "AU BUREAU DU BANQUIER",
+   "color": "b",
+   "decor": "bureau",
+   "persos": [
+    {
+     "qui": "conseiller",
+     "derriere": true,
+     "x": 790,
+     "regarde": "gauche",
+     "tient": "dossier",
+     "taille": 0.8
+    },
+    {
+     "qui": "client",
+     "x": 290,
+     "humeur": "ok",
+     "taille": 0.8,
+     "reactions": [
+      {
+       "mot": "charges",
+       "humeur": "inquiet",
+       "bras": "pointe"
+      },
+      {
+       "mot": "même les petits",
+       "humeur": "choc",
+       "bras": "haut"
+      }
+     ]
+    }
+   ],
+   "panneau": [
+    {
+     "l": "Tes revenus",
+     "sub": "salaire, autres ressources",
+     "v": "1",
+     "color": "g",
+     "mot": "revenus"
+    },
+    {
+     "l": "Ton épargne, tes crédits",
+     "sub": "ce que tu as, ce que tu dois",
+     "v": "2",
+     "color": "y",
+     "mot": "épargne"
+    },
+    {
+     "l": "Tes charges",
+     "sub": "loyer, factures…",
+     "v": "3",
+     "color": "r",
+     "mot": "charges"
+    }
+   ],
+   "note": {
+    "texte": "Dès le 20/11 : tous les nouveaux découverts",
+    "mot": "même les petits",
+    "color": "y"
+   },
+   "cues": [
+    {
+     "text": "Ton banquier peut analyser trois choses : tes revenus, ton épargne et tes crédits en cours, et tes charges."
+    },
+    {
+     "text": "Et dès le 20 novembre, c'est pour tous les nouveaux découverts, même les petits.",
+     "say": "Et dès le vingt novembre, c'est pour tous les nouveaux découverts, même les petits."
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "main": "ABONNE-TOI",
+   "sub": "la série continue demain",
+   "next": [
+    "Demain · ép. 3/8 :",
+    "et si ta banque refuse ?"
+   ],
+   "cues": [
+    {
+     "text": "Et toi, tu es à découvert combien de jours par mois ? Dis-le en commentaire. Demain : et si ta banque refuse ? Abonne-toi !"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "2026-11-14-dispense-12-8-interets",
+ "series": "L'ACTU DE TON ARGENT",
+ "cover": {"l1": "12,8 % D'AVANCE", "l2": "SUR TES INTÉRÊTS ?", "badge": "AVANT LE 30 NOVEMBRE"},
+ "footer": "Contenu pédagogique, pas un conseil personnalisé · les prélèvements sociaux restent dus",
+ "sources": "Sources : impots.gouv.fr (« Puis-je bénéficier d'une dispense du prélèvement forfaitaire non libératoire ? », modifié le 07/04/2026) ; aide du simulateur IR 2026, revenus de capitaux mobiliers",
+ "scenes": [
+  {"type": "hook", "line1": "12,8 % D'AVANCE", "line2": "SUR TES INTÉRÊTS ?", "badge": "AVANT LE 30 NOVEMBRE",
+   "cues": [{"text": "12,8 % de tes intérêts prélevés d'avance ? Tu peux l'éviter, mais avant le 30 novembre.", "say": "Douze virgule huit pour cent de tes intérêts prélevés d'avance ? Tu peux l'éviter, mais avant le trente novembre."}]},
+  {"type": "saynete", "title": "TES INTÉRÊTS", "color": "r", "decor": "bureau",
+   "persos": [
+    {"qui": "conseiller", "derriere": true, "x": 790, "regarde": "gauche", "tient": "dossier"},
+    {"qui": "cliente", "x": 290, "humeur": "ok", "tient": "telephone", "reactions": [{"mot": "avance", "humeur": "choc", "bras": "haut"}, {"mot": "pas concernés", "humeur": "ok", "bras": "repos"}]}],
+   "tag": {"big": "−12,8 %", "sub": "une avance sur ton impôt", "mot": "avance", "color": "r", "w": 600},
+   "note": {"texte": "Livret A, LDDS, LEP : pas concernés", "mot": "pas concernés", "color": "g"},
+   "cues": [
+    {"text": "Sur un livret fiscalisé ou un compte à terme, ta banque garde 12,8 % de tes intérêts : une avance sur ton impôt.", "say": "Sur un livret fiscalisé ou un compte à terme, ta banque garde douze virgule huit pour cent de tes intérêts : une avance sur ton impôt."},
+    {"text": "Le Livret A, le LDDS et le LEP ne sont pas concernés."}]},
+  {"type": "saynete", "title": "QUI PEUT L'ÉVITER ?", "color": "g", "decor": "maison", "decorLabel": "AVIS D'IMPÔT",
+   "persos": [
+    {"qui": "client", "x": 230, "humeur": "inquiet", "taille": 0.8, "reactions": [{"mot": "dispense", "humeur": "content", "bras": "haut"}]},
+    {"qui": "cliente", "x": 420, "humeur": "ok", "taille": 0.8, "reactions": [{"mot": "dispense", "humeur": "content"}]}],
+   "panneau": [
+    {"l": "Seul", "sub": "revenu fiscal de référence", "v": "< 25 000 €", "color": "y", "mot": "seul"},
+    {"l": "En couple", "sub": "revenu fiscal de référence", "v": "< 50 000 €", "color": "g", "mot": "couple"}],
+   "note": {"texte": "Chiffre sur ton dernier avis d'impôt", "mot": "dispense", "color": "b"},
+   "cues": [
+    {"text": "Ton revenu fiscal de référence est sous 25 000 € seul, ou 50 000 € en couple ? Tu peux demander une dispense.", "say": "Ton revenu fiscal de référence est sous vingt-cinq mille euros seul, ou cinquante mille euros en couple ? Tu peux demander une dispense."}]},
+  {"type": "saynete", "title": "LA DÉMARCHE", "color": "y", "decor": "bureau",
+   "persos": [
+    {"qui": "conseiller", "derriere": true, "x": 790, "regarde": "gauche"},
+    {"qui": "client", "x": 290, "humeur": "content", "tient": "dossier", "bras": "tend"}],
+   "tag": {"big": "30 NOVEMBRE", "sub": "attestation sur l'honneur", "mot": "attestation", "color": "y", "w": 620},
+   "cues": [
+    {"text": "Une attestation sur l'honneur à ta banque, avant le 30 novembre, pour tes intérêts de l'an prochain.", "say": "Une attestation sur l'honneur à ta banque, avant le trente novembre, pour tes intérêts de l'an prochain."}]},
+  {"type": "cta", "main": "PARTAGE", "sub": "à quelqu'un qui a un livret ou un compte à terme",
+   "cues": [{"text": "Partage à quelqu'un que ça concerne, et abonne-toi !"}]}
+ ]
+}
