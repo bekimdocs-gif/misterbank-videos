@@ -28,6 +28,28 @@ Chaque vidéo a une **couverture avec un titre accrocheur** : avatar de Mister B
 ## Séries
 - 12 h : **L'ACTU DE TON ARGENT** — une actualité récente qui touche le portefeuille des Français.
 - 18 h : **LES SECRETS DE TON BANQUIER · ÉP. N** — pédagogie crédit / épargne / budget / banque, numérotée.
+- 20 h 30 : **À TOI DE JOUER** — vidéo participative (vote ou réponse en commentaire), un format par jour de la semaine. Voir ci-dessous.
+
+## « À toi de jouer » : la vidéo participative de 20 h 30 (décision du 14 novembre 2026)
+Demande de Mister Bank : une vidéo par jour, **en complément** des deux autres (qui ne changent pas), pour faire commenter et s'abonner. Six formats en rotation :
+
+| Jour | Format | Principe |
+|---|---|---|
+| Lundi | **Vrai ou faux ?** | Une idée reçue sur la banque. Le public répond, verdict à la fin. |
+| Mardi | **Le duel** | Deux options face à face (Livret A ou assurance-vie, louer ou acheter, 20 ou 25 ans). Chiffres des deux côtés, pas de gagnant imposé : « ça dépend de… ». |
+| Mercredi | **Accepté ou refusé ?** | Un dossier de crédit fictif (revenus, apport, relevés). Le public vote, verdict du banquier à la fin, avec la raison. |
+| Jeudi | **Tu as X € : tu en fais quoi ?** | Une somme (500, 1 000, 10 000 €…), 2 ou 3 usages possibles expliqués. |
+| Vendredi | **Le mot du banquier** | Un mot de jargon expliqué en 15 à 20 s (TAEG, taux d'usure, agios…). |
+| Samedi | **Réponse à un commentaire** | La vidéo répond à un vrai commentaire reçu (texte cité sans le nom de la personne). S'il n'y en a aucun d'exploitable : « la question qu'on pose le plus à un banquier ». Ne jamais inventer un commentaire. |
+| Dimanche | **Accepté ou refusé ?** (rendez-vous de la semaine) | Nouveau dossier, numéroté (« dossier n° N »), suite annoncée : « prochain dossier mercredi ». |
+
+Règles propres à ce créneau :
+- **Le vote est demandé dans les 5 premières secondes** : « Écris VRAI ou FAUX », « A ou B », « ACCEPTÉ ou REFUSÉ » en commentaire, écrit en gros à l'écran. **La réponse n'arrive qu'à la fin** (la saynète fait monter le suspense).
+- 20 à 30 s (15 à 20 s pour le mot du banquier). Saynètes avec personnages comme les autres vidéos ; pour « Accepté ou refusé », le dossier est joué au bureau entre le client et le conseiller, et le verdict ACCEPTÉ (vert) ou REFUSÉ (rouge) tombe à la fin en étiquette choc (un vrai effet « tampon » peut être ajouté dans `atelier/saynete.js`).
+- Fin : « Tu avais bon ? Dis-le en commentaire » + abonnement + annonce du rendez-vous suivant.
+- Commentaire à épingler fourni dans le compte rendu (la question du vote).
+- Dossiers et situations **toujours fictifs**, mention « exemple fictif — chaque banque a ses propres critères ». Jamais de conseil d'investissement : on explique les options, on ne dit pas quoi choisir.
+- Le sticker « Sondage » de TikTok ne peut pas être ajouté en publication automatique (il n'existe que dans l'application) : le vote passe par les commentaires.
 
 ## Description TikTok (texte du post)
 Mot-clé au début, une phrase avec un chiffre, une seule demande (commente / enregistre / partage), 3 à 5 hashtags dont #misterbank. Moins de 300 caractères.

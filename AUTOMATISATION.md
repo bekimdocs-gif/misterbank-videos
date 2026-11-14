@@ -1,6 +1,6 @@
 # Procédure quotidienne (tâche programmée)
 
-Objectif : chaque jour, 2 vidéos publiées automatiquement via Metricool à **12:00** et **18:00** (Europe/Paris), **sur TikTok ET sur YouTube Shorts** (même vidéo, même heure, un seul post Metricool avec les deux réseaux — demande du 14/11/2026).
+Objectif : chaque jour, 3 vidéos publiées automatiquement via Metricool à **12:00**, **18:00** et **20:30** (Europe/Paris ; la 3e, « À TOI DE JOUER », ajoutée en complément le 14/11/2026 sans toucher aux deux autres), **sur TikTok ET sur YouTube Shorts** (même vidéo, même heure, un seul post Metricool avec les deux réseaux — demande du 14/11/2026).
 
 ## 1. Préparer
 - Cloner ce dépôt (shallow) et installer : `pip install --break-system-packages edge-tts faster-whisper` (Playwright/Chromium, ffmpeg et numpy sont normalement présents ; sinon les installer).
@@ -12,11 +12,12 @@ Objectif : chaque jour, 2 vidéos publiées automatiquement via Metricool à **1
 
 ## 2. Déterminer les créneaux à remplir
 - Jour cible = aujourd'hui si l'heure de Paris est avant 11:15, sinon demain.
-- Avec Metricool `getScheduledPosts` (brandId 8028968, timezone Europe/Paris) sur le jour cible : ne remplir que les créneaux 12:00 et/ou 18:00 qui n'ont pas déjà une publication (TikTok + YouTube). Si les deux sont pris, s'arrêter.
+- Avec Metricool `getScheduledPosts` (brandId 8028968, timezone Europe/Paris) sur le jour cible : ne remplir que les créneaux 12:00, 18:00 et/ou 20:30 qui n'ont pas déjà une publication (TikTok + YouTube). Si les trois sont pris, s'arrêter.
 
 ## 3. Choisir les sujets
 - 12:00 « L'ACTU DE TON ARGENT » : rechercher sur le web l'actualité de la semaine qui touche le portefeuille des Français. **Priorité aux changements concrets et datés** (« ce qui change pour ton argent le JJ mois » : règles bancaires, taux, aides, impôts, prix réglementés), sur le modèle de la vidéo découvert, la plus performante. Choisir le sujet le plus utile, non déjà traité (HISTORIQUE). Fin de vidéo : « Partage à quelqu'un que ça concerne » + abonnement.
 - 18:00 « LES SECRETS DE TON BANQUIER · ÉP. N » : prendre le prochain sujet non coché de `IDEES.md` (N = dernier épisode + 1). Respecter la suite annoncée à la fin de l'épisode précédent. Utiliser `EXPERTISE.md` en priorité ; si l'expertise manque pour un sujet qui en dépend, prendre le sujet suivant.
+- 20:30 « À TOI DE JOUER » (depuis le 15/11/2026, en complément) : vidéo participative qui fait voter ou répondre en commentaire. Format imposé par le jour de la semaine du jour cible (détail et règles dans `CHARTE.md`, section « À toi de jouer ») : lundi Vrai ou faux · mardi Le duel · mercredi Accepté ou refusé · jeudi Tu as X €, tu en fais quoi · vendredi Le mot du banquier · samedi Réponse à un commentaire · dimanche Accepté ou refusé (rendez-vous de la semaine). Sujet pris dans `IDEES.md` (section « À toi de jouer »), non déjà traité. Jusqu'au 20/11/2026, pas de sujet découvert sur ce créneau. Ne jamais reprendre le sujet des vidéos de 12:00 et 18:00 du même jour.
 
 ## 4. Vérifier les faits
 - Chaque chiffre/règle vérifié sur au moins une source fiable ouverte le jour même. Noter les sources dans la fiche (`sources`).
@@ -34,7 +35,7 @@ Objectif : chaque jour, 2 vidéos publiées automatiquement via Metricool à **1
 ## 6. Publier
 - `git add fiches videos (vidéo .mp4 + couverture .jpg) HISTORIQUE.md IDEES.md && git commit && git push` (avant le push : `git fetch origin main && git rebase origin/main`).
 - Lien public : `https://raw.githubusercontent.com/bekimdocs-gif/misterbank-videos/main/videos/<fichier>.mp4` — vérifier qu'il répond 200 (`curl -sI`).
-- Metricool `createScheduledPost` : blogId 8028968, date `AAAA-MM-JJT12:00:00+01:00` (ou 18:00), info avec `autoPublish: true`, **`providers: [{"network":"tiktok"},{"network":"youtube"}]`**, `media: [lien]`, **`videoThumbnailUrl` = lien public de la couverture `.jpg` (même adresse que la vidéo, extension .jpg ; vérifier qu'il répond 200)**, `text` = description, `tiktokData` avec `title` = même description (obligatoire), `privacyOption: "PUBLIC_TO_EVERYONE"`, `isAigc: true`, `autoAddMusic: false`, `publicationDate: {dateTime, timezone: "Europe/Paris"}`.
+- Metricool `createScheduledPost` : blogId 8028968, date `AAAA-MM-JJT12:00:00+01:00` (ou 18:00, ou 20:30), info avec `autoPublish: true`, **`providers: [{"network":"tiktok"},{"network":"youtube"}]`**, `media: [lien]`, **`videoThumbnailUrl` = lien public de la couverture `.jpg` (même adresse que la vidéo, extension .jpg ; vérifier qu'il répond 200)**, `text` = description, `tiktokData` avec `title` = même description (obligatoire), `privacyOption: "PUBLIC_TO_EVERYONE"`, `isAigc: true`, `autoAddMusic: false`, `publicationDate: {dateTime, timezone: "Europe/Paris"}`.
 - **YouTube Shorts (depuis le 14/11/2026)** : dans le même post, `youtubeData` = `{"type": "short", "privacy": "public", "madeForKids": false, "category": "EDUCATION", "isAiGeneratedContent": false, "title": "<accroche courte, 100 caractères max, finit par #shorts>", "tags": [4 à 6 mots-clés en français, "Mister Bank"]}` (`isAiGeneratedContent` false : animation illustrée, pas de contenu réaliste). Si un post déjà programmé ne contient que TikTok, lui ajouter YouTube avec `updateScheduledPost` (en gardant tout le contenu d'origine). Vérifier dans la réponse que les deux réseaux sont bien présents ; signaler tout échec YouTube dans le compte rendu.
 - Mettre à jour `HISTORIQUE.md` (et cocher `IDEES.md`), commit + push.
 
