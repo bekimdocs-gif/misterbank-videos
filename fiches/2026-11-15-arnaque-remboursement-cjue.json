@@ -1,0 +1,39 @@
+{
+ "id": "2026-11-15-arnaque-remboursement-cjue",
+ "series": "L'ACTU DE TON ARGENT",
+ "cover": {"l1": "ARNAQUÉ EN LIGNE ?", "l2": "REMBOURSÉ D'ABORD", "badge": "LA JUSTICE EUROPÉENNE TRANCHE"},
+ "footer": "Contenu pédagogique, pas un conseil personnalisé",
+ "sources": "Sources : service-public.gouv.fr, actualité A19102 (02/11/2026) ; CJUE, 1re ch., 15/10/2026, aff. C-70/25 ; directive (UE) 2015/2366, art. 73",
+ "scenes": [
+  {"type": "hook", "line1": "ARNAQUÉ EN LIGNE ?", "line2": "REMBOURSÉ D'ABORD", "badge": "DÉCISION DE LA JUSTICE EUROPÉENNE",
+   "cues": [{"text": "Tu t'es fait piéger et tu as tapé tes codes bancaires ? Ta banque doit d'abord te rembourser."}]},
+  {"type": "saynete", "title": "LE PIÈGE", "color": "r", "decor": "maison", "decorLabel": "À VENDRE",
+   "persos": [
+    {"qui": "cliente", "x": 300, "humeur": "content", "tient": "telephone", "reactions": [{"mot": "faux site", "humeur": "ok", "bras": "pointe"}, {"mot": "700", "humeur": "choc", "bras": "haut"}]}],
+   "tag": {"big": "−700 €", "sub": "opération qu'elle n'a pas faite", "mot": "700", "color": "r", "w": 620},
+   "note": {"texte": "Faux lien de « confirmation de vente »", "mot": "faux site", "color": "y"},
+   "cues": [
+    {"text": "Une vendeuse en ligne clique sur un faux lien, tape ses codes sur un faux site de sa banque.", "say": "Une vendeuse en ligne clique sur un faux lien, et tape ses codes sur un faux site de sa banque."},
+    {"text": "Résultat : 700 € envolés.", "say": "Résultat : sept cents euros envolés."}]},
+  {"type": "saynete", "title": "CE QUE DIT LA JUSTICE", "color": "g", "decor": "bureau",
+   "persos": [
+    {"qui": "conseiller", "derriere": true, "x": 790, "regarde": "gauche", "tient": "dossier"},
+    {"qui": "cliente", "x": 290, "humeur": "inquiet", "reactions": [{"mot": "rembourser", "humeur": "content", "bras": "haut"}]}],
+   "tag": {"big": "J+1 OUVRÉ", "sub": "remboursement au plus tard", "mot": "lendemain", "color": "g", "w": 620},
+   "note": {"texte": "Négligence ? La banque doit le prouver ensuite", "mot": "prouver", "color": "y"},
+   "cues": [
+    {"text": "Le 15 octobre, la justice européenne a tranché : la banque doit rembourser au plus tard le lendemain ouvré.", "say": "Le quinze octobre, la justice européenne a tranché : la banque doit rembourser au plus tard le lendemain ouvré."},
+    {"text": "Elle ne peut pas refuser en disant « tu as été négligente ». Elle pourra le prouver devant un juge, après."}]},
+  {"type": "saynete", "title": "ATTENTION", "color": "y", "decor": "bureau",
+   "persos": [
+    {"qui": "conseiller", "derriere": true, "x": 790, "regarde": "gauche"},
+    {"qui": "client", "x": 290, "humeur": "ok", "tient": "telephone", "reactions": [{"mot": "toi qui", "humeur": "inquiet", "bras": "pointe"}]}],
+   "tag": {"big": "PAS CONCERNÉ", "sub": "virement fait par toi sous pression", "mot": "toi qui", "color": "r", "w": 640},
+   "note": {"texte": "Préviens ta banque immédiatement", "mot": "préviens", "color": "g"},
+   "cues": [
+    {"text": "Attention : si c'est toi qui fais le virement, sous la pression d'un faux conseiller, ce n'est pas pareil."},
+    {"text": "Mon conseil : préviens ta banque immédiatement."}]},
+  {"type": "cta", "main": "PARTAGE", "sub": "à quelqu'un qui vend en ligne",
+   "cues": [{"text": "Partage à quelqu'un que ça concerne, et abonne-toi !"}]}
+ ]
+}

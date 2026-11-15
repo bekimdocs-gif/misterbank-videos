@@ -1,0 +1,96 @@
+{
+ "id": "2026-11-15-decouvert-ep3-refus",
+ "series": "DÉCOUVERT : J-5 · ÉP. 3/8",
+ "cover": {
+  "l1": "DÉCOUVERT REFUSÉ ?",
+  "l2": "C'EST POSSIBLE",
+  "badge": "ÉP. 3/8 · J-5"
+ },
+ "footer": "Contenu pédagogique, pas un conseil personnalisé",
+ "sources": "Sources : service-public.gouv.fr, actualité A18569 (mise à jour le 12/11/2026) ; Sénat, réponse ministérielle, question n° 07194 (2026)",
+ "scenes": [
+  {
+   "type": "hook",
+   "line1": "DÉCOUVERT REFUSÉ ?",
+   "line2": "C'EST POSSIBLE",
+   "badge": "ÉPISODE 3 SUR 8",
+   "sub": "J-5 avant le 20 novembre",
+   "cues": [
+    {
+     "text": "Épisode 3. Ta banque peut-elle te refuser un découvert ? Oui.",
+     "say": "Épisode trois. Ta banque peut-elle te refuser un découvert ? Oui."
+    }
+   ]
+  },
+  {
+   "type": "saynete",
+   "title": "AU BUREAU DU BANQUIER",
+   "color": "r",
+   "decor": "bureau",
+   "persos": [
+    {
+     "qui": "conseiller",
+     "derriere": true,
+     "x": 790,
+     "regarde": "gauche",
+     "tient": "dossier"
+    },
+    {
+     "qui": "client",
+     "x": 290,
+     "humeur": "ok",
+     "reactions": [
+      {
+       "mot": "pas un droit",
+       "humeur": "choc",
+       "bras": "haut"
+      },
+      {
+       "mot": "ce qui bloque",
+       "humeur": "ok",
+       "bras": "pointe"
+      }
+     ]
+    }
+   ],
+   "tag": {
+    "big": "PAS UN DROIT",
+    "sub": "jamais accordé automatiquement",
+    "mot": "pas un droit",
+    "color": "r",
+    "w": 620
+   },
+   "note": {
+    "texte": "Mon conseil : demande ce qui bloque",
+    "mot": "ce qui bloque",
+    "color": "g"
+   },
+   "cues": [
+    {
+     "text": "Le découvert, ce n'est pas un droit : ta banque n'est jamais obligée de l'accepter."
+    },
+    {
+     "text": "Et dès le 20 novembre, elle doit d'abord vérifier que tu peux rembourser, pour tout nouveau découvert.",
+     "say": "Et dès le vingt novembre, elle doit d'abord vérifier que tu peux rembourser, pour tout nouveau découvert."
+    },
+    {
+     "text": "Si c'est non, demande ce qui bloque, et reviens avec tes justificatifs de revenus et de charges."
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "main": "ABONNE-TOI",
+   "sub": "la série continue demain",
+   "next": [
+    "Demain · ép. 4/8 :",
+    "dans le rouge depuis 3 mois ?"
+   ],
+   "cues": [
+    {
+     "text": "Et toi, ta banque t'a déjà dit non ? Dis-le en commentaire. Demain : dans le rouge depuis trois mois. Abonne-toi !"
+    }
+   ]
+  }
+ ]
+}
